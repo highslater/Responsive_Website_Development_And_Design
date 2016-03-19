@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+
+    <button onclick="FileHelper('scripts.js')">scrips.js</button>
+    <button onclick="FileHelper('styles.css')">styles.css</button>
+    <button onclick="FileHelper('testtxt.html')">testtxt.html</button>
+    <h3>Contents of the file:</h3>
+    <pre><code id="file-content"></code></pre>
+
+    <script>
+        function FileHelper(file) {
+            var text = FileHelper.readStringFromFileAtPath(file);
+            document.getElementById('file-content').innerText = text;
+        }
+
+        {
+            FileHelper.readStringFromFileAtPath = function (pathOfFileToReadFrom) {
+                var request = new XMLHttpRequest();
+                request.open("GET", pathOfFileToReadFrom, false);
+                request.send(null);
+                var returnValue = request.responseText;
+                return returnValue;
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

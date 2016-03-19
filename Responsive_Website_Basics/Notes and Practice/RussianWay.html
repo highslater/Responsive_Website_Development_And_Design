@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+
+
+    <input type="file" id="openFile" />
+    <h3>Contents of the file:</h3>
+    <pre id="fileContents"></pre>
+
+    <script>
+        document.getElementById('openFile').addEventListener('change', function () {
+            var fr = new FileReader();
+            fr.onload = function () {
+                document.getElementById('fileContents').textContent = this.result;
+            }
+            fr.readAsText(this.files[0]);
+        })
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Assignment 2</title>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/handlebars-v3.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="AnimalsData.js"></script>
+    <script src="assignment.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="assignment.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- start navbar-->
+        <nav>
+            <ul class="nav nav-tabs">
+                <li class="home"><a href="#">Home</a></li>
+                <li class="reptiles"><a href="#">Reptiles</a></li>
+                <li class="mammals"><a href="#">Mammals</a></li>
+                <li class="birds"><a href="#">Birds</a></li>
+            </ul>
+        </nav>
+        <!-- / navbar-->
+    </div>
+    <!-- / container-fluid -->
+
+    <!--start  aside -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+                <aside>
+                    <ul>
+                        <li class="reptiles" id="nameLink0">
+                            <a href="#">Reptiles</a>
+                            <ul>
+                                <li id="imageLink0">
+                                    <a href="#">Snake</a>
+                                </li>
+                                <li id="imageLink1">
+                                    <a href="#">Croccodile</a>
+                                </li>
+                                <li id="imageLink2">
+                                    <a href="#">Lizard</a>
+                                </li>
+                                <li id="imageLink3">
+                                    <a href="#">Turtle</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="mammals" id="nameLink1">
+                            <a href="#">Mammals</a>
+                            <ul>
+                                <li id="imageLink4">
+                                    <a href="#">Cat</a>
+                                </li>
+                                <li id="imageLink5">
+                                    <a href="#">Dog</a>
+                                </li>
+                                <li id="imageLink6">
+                                    <a href="#">Primate</a>
+                                </li>
+                                <li id="imageLink7">
+                                    <a href="#">Mouse</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="birds" id="nameLink2">
+                            <a href="#">Birds</a>
+                            <ul>
+                                <li id="imageLink8">
+                                    <a href="#">American Flamingo</a>
+                                </li>
+                                <li id="imageLink9">
+                                    <a href="#">Atlantic Puffin</a>
+                                </li>
+                                <li id="imageLink10">
+                                    <a href="#">Eagle</a>
+                                </li>
+                                <li id="imageLink11">
+                                    <a href="#">Parrot</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </aside>
+                <!-- / aside -->
+            </div>
+
+            <div id="content" class="col-xs-12 col-sm-7 col-md-8 col-lg-9" role="main"></div>
+        </div>
+        <!-- /row-fluid -->
+    </div>
+    <!-- / container-fluid -->
+</body>
+
+
+<!-- SCRIPTS BELOW -->
+
+
+
+
+<!--put details_template here-->
+<script id="detail-template" type="text/x-handlebars-template">
+    <div class="container-fluid">
+        <h1>{{name}}</h1>
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <img class="img-rounded img-responsive center-block" src={{image1}} alt="">
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <img class="img-rounded img-responsive center-block" src={{image2}} alt="">
+            </div>
+            <p class="col-xs-10 col-sm-10 col-md-10 col-lg-10">{{description}}</p>
+        </div>
+    </div>
+</script>
+<!-- / details_template -->
+
+<!-- home-template -->
+<script id="home-template" type="text/x-handlebars-template">
+    <div class="container-fluid">
+        <h1>HOME</h1>
+        <ul>
+            <li role="navigation" class="reptiles">
+                <a href="#">Reptiles</a>
+                <ul>
+                    <li role="" id="imageLink0">
+                        <a href="#">Snake</a>
+                    </li>
+                    <li role="" id="imageLink1">
+                        <a href="#">Croccodile</a>
+                    </li>
+                    <li role="" id="imageLink2">
+                        <a href="#">Lizard</a>
+                    </li>
+                    <li role="" id="imageLink3">
+                        <a href="#">Turtle</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="nameLink1" class="mammals">
+                <a href="#">Mammals</a>
+                <ul>
+                    <li role="" id="imageLink4">
+                        <a href="#">Cat</a>
+                    </li>
+                    <li role="" id="imageLink5">
+                        <a href="#">Dog</a>
+                    </li>
+                    <li role="" id="imageLink6">
+                        <a href="#">Primate</a>
+                    </li>
+                    <li role="" id="imageLink7">
+                        <a href="#">Mouse</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="nameLink2" class="birds">
+                <a href="#">Birds</a>
+                <ul>
+                    <li role="" id="imageLink8">
+                        <a href="#">American Flamingo</a>
+                    </li>
+                    <li role="" id="imageLink9">
+                        <a href="#">Atlantic Puffin</a>
+                    </li>
+                    <li role="" id="imageLink10">
+                        <a href="#">Eagle</a>
+                    </li>
+                    <li role="" id="imageLink11">
+                        <a href="#">Parrot</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+</script>
+<!-- / home-template -->
+
+<!-- reptiles-template -->
+<script id="reptiles-template" type="text/x-handlebars-template">
+    <div class="container-fluid">
+        <h1>REPTILES</h1>
+        <ul>
+            <li id="nameLink0">
+                <a href="">Reptiles</a>
+                <ul>
+                    <li role="" id="imageLink0">
+                        <a href="#">Snake</a>
+                    </li>
+                    <li role="" id="imageLink1">
+                        <a href="#">Croccodile</a>
+                    </li>
+                    <li role="" id="imageLink2">
+                        <a href="#">Lizard</a>
+                    </li>
+                    <li role="" id="imageLink3">
+                        <a href="#">Turtle</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+</script>
+<!-- / reptiles-template -->
+
+<!-- mammals-template -->
+<script id="mammals-template" type="text/x-handlebars-template">
+    <div class="container-fluid">
+        <h1>MAMMALS</h1>
+        <ul>
+            <li id="nameLink1">
+                <a href="">Mammals</a>
+                <ul>
+                    <li role="" id="imageLink4">
+                        <a href="#">Cat</a>
+                    </li>
+                    <li role="" id="imageLink5">
+                        <a href="#">Dog</a>
+                    </li>
+                    <li role="" id="imageLink6">
+                        <a href="#">Primate</a>
+                    </li>
+                    <li role="" id="imageLink7">
+                        <a href="#">Mouse</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+</script>
+<!-- / mammals-template -->
+
+<!-- birds-template -->
+<script id="birds-template" type="text/x-handlebars-template">
+    <div class="container-fluid">
+        <h1>BIRDS</h1>
+        <ul>
+            <li id="nameLink2">
+                <a href="">Birds</a>
+                <ul>
+                    <li role="" id="imageLink8">
+                        <a href="#">American Flamingo</a>
+                    </li>
+                    <li role="" id="imageLink9">
+                        <a href="#">Atlantic Puffin</a>
+                    </li>
+                    <li role="" id="imageLink10">
+                        <a href="#">Eagle</a>
+                    </li>
+                    <li role="" id="imageLink11">
+                        <a href="#">Parrot</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+</script>
+<!-- / birds-template -->
+
+<script type="text/javascript">
+    var home_source = $("#home-template").html();
+    var home_template = Handlebars.compile(home_source);
+
+    var reptiles_source = $("#reptiles-template").html();
+    var reptiles_template = Handlebars.compile(reptiles_source);
+
+    var mammals_source = $("#mammals-template").html();
+    var mammals_template = Handlebars.compile(mammals_source);
+
+    var birds_source = $("#birds-template").html();
+    var birds_template = Handlebars.compile(birds_source);
+
+    $(document).on("click", ".home", function () {
+        var html = home_template();
+        $('#content').html(html);
+    })
+
+    $(document).on("click", ".reptiles", function () {
+        var html = reptiles_template();
+        $('#content').html(html);
+    })
+
+    $(document).on("click", ".mammals", function () {
+        var html = mammals_template();
+        $('#content').html(html);
+    })
+
+    $(document).on("click", ".birds", function () {
+        var html = birds_template();
+        $('#content').html(html);
+    })
+</script>
+
+</html>

@@ -1,0 +1,147 @@
+/* styles.css */
+
+body {
+    background: black;
+}
+
+span {
+    color: purple;
+}
+
+div {
+    vertical-align: text-top;
+    display: inline-block;
+    width: 49%;
+    min-width: 350px;
+    margin: auto;
+}
+
+header {
+    margin-top: 50px;
+}
+
+header img {
+    display: none;
+    border: 5px solid purple;
+}
+
+img {
+    max-width: 94%;
+    height: auto;
+}
+
+h1,
+h2,
+h4 {
+    color: white;
+    width: 95%;
+}
+
+h3 {
+    display: inline-block;
+    width: 15%;
+    min-width: 160px;
+    text-align: center;
+    color: blue;
+    background: lightblue;
+    margin: 5px;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+#cssButton1,
+#cssButton2 {
+    width: 7%;
+    min-width: 70px;
+    text-align: center;
+    color: blue;
+    background: lightblue;
+    margin: 5px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    display: none;
+}
+
+h4 {
+    color: purple;
+}
+
+p {
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.purple {
+    color: purple;
+}
+
+.purple:hover {
+    background: purple;
+    color: white;
+}
+
+#textOutput {
+    background: black;
+    color: purple;
+    min-height: 100px;
+    max-height: 200px;
+    width: 90%;
+    min-width: 350px;
+    margin: auto;
+    overflow: auto;
+    display: block;
+}
+
+#output {
+    background: black;
+    color: white;
+    min-height: 100px;
+    max-height: 200px;
+    width: 90%;
+    min-width: 350px;
+    margin: auto;
+    overflow: auto;
+    display: none;
+}
+
+#instructions {
+    width: 100%;
+    display: none;
+}
+
+#content {
+    width: 100%;
+}
+
+#getInstructions {
+    margin: 10px 5px;
+    padding 5px;
+    background: lightblue;
+    color: blue;
+    font-weight: bold;
+    width: auto;
+}
+
+#caption {
+    display: none;
+    background: black;
+    color: gray;
+    width: 90%;
+    margin: auto;
+}
+
+#fileContent {
+    color: purple;
+    display: block;
+    width: 90%;
+}
+
+button#getInstructions:hover,
+h3:hover {
+    background: blue;
+    color: lightblue;
+    font-weight: bold;
+    border-color: lightblue;
+}

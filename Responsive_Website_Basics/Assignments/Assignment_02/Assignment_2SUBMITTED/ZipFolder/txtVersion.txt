@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment_2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 id='heading' onclick="change_color()"><span>Click</span> for a subject I am interested in</h1>
+        </div>
+        <div>
+            <img id="headerImage" src="./images/Screenshot.png" alt="">
+        </div>
+    </header>
+    <br>
+    <button id="getInstructions" onclick="getInstructions()">Instructions</button>
+    <br>
+    <h2>Images for this project:</h2>
+    <h3 id="html" onclick="showOutput('images/html.png'), doubleDown()">My HTML file</h3>
+
+
+    <h3 id="css" onclick="doubleUp()">My CSS file</h3>
+
+    <h3 id="cssButton1" onclick="showOutput('images/css1.png')">CSS pt1</h3>
+    <h3 id="cssButton2" onclick="showOutput('images/css2.png')">CSS pt2</h3>
+
+
+    <h3 id="js" onclick="showOutput('images/js.png'), doubleDown()">My JS file</h3>
+    <br>
+    <div id="output">
+        <p id="instructions">
+            The user should be able to change the page in some way by interacting with a GUI element such as a button.
+            <br>The buttons above link to scrollable images.
+            <br>The buttons below will show the file names that were used.
+            <br>If this is being viewed on "Brackets", on your computers "local host", or on some other "served"
+            <br>enviroment, the file contents will be listed also.
+        </p>
+        <img id="content" src="" alt="">
+    </div>
+    <p id="caption">Images are scrollable.</p>
+    <br>
+    <br>
+    <button class="purple" onclick="fileName('scripts.js'), FileHelper('scripts.js')">JavaScript</button>
+    <button class="purple" onclick="fileName('styles.css'), FileHelper('styles.css')">CSS</button>
+    <button class="purple" onclick="fileName('txtVersion.txt'), FileHelper('txtVersion.txt')">HTML</button>
+    <br>
+    <h4 id="h4contents"></h4>
+    <div id="textOutput"><pre><code id="fileContent"></code></pre></div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

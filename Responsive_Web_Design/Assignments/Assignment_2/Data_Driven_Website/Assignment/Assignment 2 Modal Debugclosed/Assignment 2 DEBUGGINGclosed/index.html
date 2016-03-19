@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 2</title>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/handlebars-v3.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="AnimalsData.js"></script>
+    <script src="assignment.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="assignment.css" rel="stylesheet">
+</head>
+
+<body role="document">
+    <div class="container">
+        <!-- start navbar-->
+        <nav>
+            <ul class="nav nav-tabs">
+                <li role="" id="detailsBtn"><a href="#">Details</a></li>
+                <li role="" id="modalBtn"><a href="#">Modal</a></li>
+            </ul>
+        </nav>
+        <!-- / navbar-->
+        <!--start aside-->
+        <row>
+            <div class="container col-md-2">
+                <ul>
+                    <li id="nameLink0">
+                        <a href="">Reptiles</a>
+                    </li>
+                    <ul>
+                        <li role="" id="imageLink0">
+                            <a href="#">Snake</a>
+                        </li>
+                        <li role="" id="imageLink1">
+                            <a href="#">Croccodile</a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </row>
+        <!-- / aside-->
+        <div id="content" class="container-fluid col-md-10" role="main"></div>
+    </div>
+    <!-- / container -->
+
+    <!--put details_template here-->
+    <script id="detail-template" type="text/x-handlebars-template">
+        <div class="container">
+            <h1>{{name}}</h1>
+            <div class="row-fluid">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <img class="img-rounded img-responsive center-block" src={{image1}} alt="">
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <img class="img-rounded img-responsive center-block" src={{image2}} alt="">
+                </div>
+                <p class="col-xs-10 col-sm-10 col-md-10 col-lg-10">{{description}}</p>
+            </div>
+        </div>
+    </script>
+    <!-- / details_template -->
+
+    <!--put modal_template here-->
+    <script id="modal-template" type="text/x-handlebars-template">
+        <div id="imageModal" class="modal fade" role="dialog">
+            <div class="modal-dialog" style="width:800px">
+                <!-- put style in css later -->
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img style="width: 100%" src="{{image1}}" alt="">
+                        <!-- put style in css later -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <!-- / modal_template -->
+
+    <script type="text/javascript">
+        /*grab source out of script tag*/
+        var source = $("#detail-template").html();
+        /*compile it to create template*/
+        var detail_template = Handlebars.compile(source);
+        /*grab source out of script tag*/
+        var modal_source = $("#modal-template").html();
+        /*compile it to create template*/
+        var modal_template = Handlebars.compile(modal_source);
+
+
+        var data0 = {
+            image1: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Coast_Garter_Snake.jpg/500px-Coast_Garter_Snake.jpg",
+            image2: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Nerodia_sipedon_shedding.JPG/440px-Nerodia_sipedon_shedding.JPG",
+            name: "Snake",
+            description: "Snakes are elongated, legless, carnivorous reptiles of the suborder Serpentes that can be distinguished from legless lizards by their lack of eyelids and external ears. Like all squamates, snakes are ectothermic, amniote vertebrates covered in overlapping scales. Many species of snakes have skulls with several more joints than their lizard ancestors, enabling them to swallow prey much larger than their heads with their highly mobile jaws. To accommodate their narrow bodies, snakes' paired organs (such as kidneys) appear one in front of the other instead of side by side, and most have only one functional lung. Some species retain a pelvic girdle with a pair of vestigial claws on either side of the cloaca. Living snakes are found on every continent except Antarctica, and on most smaller land masses — exceptions include some large islands, such as Ireland and New Zealand, and many small islands of the Atlantic and central Pacific.[3] Additionally, sea snakes are widespread throughout the Indian and Pacific Oceans. More than 20 families are currently recognized, comprising about 500 genera and about 3,400 species.[4][5] They range in size from the tiny, 10 cm-long thread snake to the reticulated python of up to 6.95 meters (22.8 ft) in length.[6] The fossil species Titanoboa cerrejonensis was 13 meters (43 ft) long.[7] Snakes are thought to have evolved from either burrowing or aquatic lizards, perhaps during the Jurassic period, with the earliest known fossils dating to between 143 and 167 Ma ago.[8] The diversity of modern snakes appeared during the Paleocene period (c 66 to 56 Ma ago). The oldest preserved descriptions of snakes can be found in the Brooklyn Papyrus. Most species are nonvenomous and those that have venom use it primarily to kill and subdue prey rather than for self-defense. Some possess venom potent enough to cause painful injury or death to humans. Nonvenomous snakes either swallow prey alive or kill by constriction."
+        };
+        var data1 = {
+            image1: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Crocodilia_collage.jpg/600px-Crocodilia_collage.jpg",
+            image2: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Caiman_crocodilus_Tropicario_2.JPG/440px-Caiman_crocodilus_Tropicario_2.JPG",
+            name: "Crocodilia",
+            description: "The Crocodilia (or Crocodylia) are an order of large, predatory, semiaquatic reptiles. They appeared 83.5 million years ago in the Late Cretaceous period (Campanian stage) and are the closest living relatives of birds, as the two groups are the only known survivors of the Archosauria. Members of the crocodilian total group, the clade Pseudosuchia, appeared about 250 million years ago in the Early Triassic period, and diversified during the Mesozoic era. The order Crocodilia includes the true crocodiles (family Crocodylidae), the alligators and caimans (family Alligatoridae), and the gharial and false gharial (family Gavialidae). Although the term 'crocodiles' is sometimes used to refer to all of these, a less ambiguous vernacular term for this group is crocodilians."
+        };
+
+
+        $('#detailsBtn').click(function () {
+            $('#imageModal').modal('hide');
+            var html = detail_template(data0);
+            $('#content').html(html);
+        })
+
+        $('#modalBtn').click(function () {
+            var html = modal_template(data0);
+            $('#content').html(html);
+            $('#imageModal').modal('show');
+            $('#imageModal').on('hidden.bs.modal', function () {
+                $('#detailsBtn').click();
+            });
+        })
+
+
+
+        $("#nameLink0").click(function () {
+            var html = detail_template();
+            $('#content').html(html);
+        });
+
+        $("#imageLink0").click(function () {
+            var html = detail_template(data0);
+            $('#content').html(html);
+        });
+
+        $("#imageLink1").click(function () {
+            var html = detail_template(data1);
+            $('#content').html(html);
+        });
+    </script>
+</body>
+
+</html>

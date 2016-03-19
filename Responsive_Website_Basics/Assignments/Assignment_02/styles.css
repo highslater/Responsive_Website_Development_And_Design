@@ -1,0 +1,63 @@
+div {
+    vertical-align: text-top;
+    display: inline-block;
+    width: 49%;
+    min-width: 350px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    color: lightblue;
+    width: 95%;
+}
+
+h3 {
+    display: inline-block;
+    width: 15%;
+    min-width: 160px;
+    text-align: center;
+    color: blue;
+    background: lightblue;
+    margin: 5px;
+    padding: 5px 5px;
+}
+
+#output {
+    background: lightblue;
+    height: 100px;
+    display: inline-block;
+    width: 80%;
+    min-width: 350px;
+    margin: auto;
+}
+
+#content {
+    overflow: auto;
+    height: 500px;
+    background-image: url('');
+    background-image: repeat-n;
+    background-size: cover;
+    width: 100%;
+}
+
+button#clearDiv {
+    margin: 10px 0px;
+    padding 5px;
+    background: lightblue;
+    color: blue;
+    font-weight: bold;
+    width: auto;
+}
+
+button#clearDiv:hover,
+h3:hover {
+    background: blue;
+    color: lightblue;
+    font-weight: bold;
+    border-color: lightblue;
+}

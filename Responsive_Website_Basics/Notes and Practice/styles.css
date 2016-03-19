@@ -1,0 +1,97 @@
+body {
+    background: black;
+}
+
+div {
+    vertical-align: text-top;
+    display: inline-block;
+    width: 49%;
+    min-width: 350px;
+    margin: auto;
+}
+
+header {
+    margin-top: 50px;
+}
+
+header img {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h4 {
+    color: white;
+    width: 95%;
+}
+
+h3 {
+    display: inline-block;
+    width: 15%;
+    min-width: 160px;
+    text-align: center;
+    color: blue;
+    background: lightblue;
+    margin: 5px;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+p {
+    color: white;
+}
+
+#output {
+    background: black;
+    color: white;
+    min-height: 100px;
+    max-height: 200px;
+    width: 90%;
+    min-width: 350px;
+    margin: auto;
+    overflow: auto;
+    display: none;
+}
+
+#instructions {
+    width: 100%;
+    display: none;
+}
+
+#content {
+    width: 100%;
+}
+
+#getInstructions {
+    margin: 10px 5px;
+    padding 5px;
+    background: lightblue;
+    color: blue;
+    font-weight: bold;
+    width: auto;
+}
+
+#caption {
+    display: none;
+    background: black;
+    color: white;
+    width: 90%;
+    margin: auto;
+}
+
+#fileContent {
+    color: white;
+}
+
+button#getInstructions:hover,
+h3:hover {
+    background: blue;
+    color: lightblue;
+    font-weight: bold;
+    border-color: lightblue;
+}
