@@ -1,0 +1,9 @@
+Web Application Development with JavaScript and MongoDB:
+
+Module 4: SimpleSchemas, autoform and code re-organisation
+
+create a well organised application using special Meteor folders
+organise templates into multiple files
+use the iron:router package to create multiple page applications
+generate data entry forms automatically using SimpleSchema and autoform
+validate user data automatically using SimpleSchema

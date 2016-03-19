@@ -1,0 +1,82 @@
+
+1. 
+When does the function passed to Meteor.startup run?
+Whenever the Meteor server is started up.
+
+2. 
+What does the following code pass to the template helper if there are no items in the Documents collection?
+
+Template.docList.helpers({document:function(){ 
+  doc = Documents.findOne(); 
+  if (!doc){ 
+    return {"title":"nothing to see here"}; 
+  } else { 
+    return doc; 
+  }
+}
+
+An object with a title field
+
+3. 
+In which of the following cases will the datedisplay template periodically re-render itself?
+
+Meteor.setInterval(function(){  
+  Session.set("date", new Date());
+}, 1000);
+Template.datedisplay.helpers({  
+  date:function(){  
+    return Session.get("date"); 
+  }
+})
+
+4. 
+Which of the following are reactive data sources? (Select all that apply)
+Session
+New Mongo.Collection("comments");
+
+5. 
+Which of the following creates a collection which will be visible inside Mongo as 'films' and inserts something into it when the server starts up?
+Films = new Mongo.Collection("films");
+//code to run on server at startup
+Meteor.startup(function(){  
+  Films.insert({"title":"sun wars 25"});
+});
+
+6. 
+You see a variable declaration as follows:
+var global_var = true;
+Where can this variable be seen?
+In template helpers in the same js file as this line.
+
+7. 
+Look up the sharejs package for Meteor. Find the mizzao github page. Who is the first of the list of contributors at the bottom of the page?
+
+Andrew Mao
+
+8. 
+Locate and look in a Bootstrap.css file. Which of the following navbar related classes are in the Bootstrap css file? Select all that apply.
+navbar-fixed-top
+navbar-header
+navbar-collapse
+navbar-fixed-bottom
+
+Incorrect
+9. 
+Whilst viewing a Meteor app that has no packages added to it on localhost:3000, start up a JavaScript console in your browser. Type
+
+console.log(Meteor);
+Which of the following are properties of the Meteor object?
+
+*****isServer
+
+loginWithPassword
+
+*****absoluteUrl
+
+isConnected
+
+10. 
+Why did I use an iframe to wrap the preview pane instead of a div?
+An iframe contains a complete HTML document, meaning the user can code up a complete HTML document in the editor pane, and it will display as expected in the viewer pane.
+
+

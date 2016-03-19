@@ -1,0 +1,10 @@
+Web Application Development with JavaScript and MongoDB:
+
+Module 3: Publish and subscribe model and MongoDB filters
+
+use bootstrap icons
+use the publish and subscribe model to control data read access
+understand the concept of asynchronous execution
+work with template data contexts and helper functions
+use packages to implement in-place content editing
+use complex MongoDB filters

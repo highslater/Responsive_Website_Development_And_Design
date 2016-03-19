@@ -1,0 +1,357 @@
+Web Application Development with JavaScript and MongoDB:
+
+Module 1: MongoDB, Meteor and reactive data
+
+access MongoDB on the command line
+understand how to check for valid returns from find queries
+identify reactive data sources within the Meteor framework
+use the Session object to store user data
+understand variable scope
+use iframes to embed pages within pages
+
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB $ meteor create textcircle
+Created a new Meteor app in 'textcircle'.     
+
+To run your new app:                          
+  cd textcircle                               
+  meteor                                      
+                                              
+If you are new to Meteor, try some of the learning resources here:
+  https://www.meteor.com/learn  
+
+
+  <!-- This is textcircle.html -->
+
+<head>
+  <title>textcircle</title>
+</head>
+
+<body>
+  <h1>Welcome to TextCircle!</h1>
+
+  {{> editor}}
+</body>
+
+<template name="editor">
+</template>
+
+
+// This is textcircle.js
+
+if (Meteor.isClient) {
+}
+
+if (Meteor.isServer) {
+  Meteor.startup(function () {
+    // code to run on server at startup
+  });
+}
+
+
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB $ meteor
+run: You're not in a Meteor project directory.
+
+To create a new Meteor project:
+  meteor create <project name>
+For example:
+  meteor create myapp
+
+For more help, see 'meteor --help'.
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB $ cd textcircle/
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB/textcircle $ meteor
+[[[[[ ~/Programming/Coursera/Working On/Web Application Development with
+JavaScript and MongoDB/textcircle ]]]]]
+
+=> Started proxy.                             
+=> Started MongoDB.                           
+=> Started your app.                          
+
+=> App running at: http://localhost:3000/
+
+
+// This is textcircle.js
+
+this.Documents = new Mongo.Collection("documents");
+
+if (Meteor.isClient) {
+}
+
+if (Meteor.isServer) {
+    Meteor.startup(function () {
+// code to run on server at startup
+if (!Documents.findOne()) {
+    Documents.insert( {title: "my new document"});
+}
+});
+}
+
+
+* console * 
+
+Documents.findOne()
+Object {_id: "aoHNkc3H6QtWzxKiE", title: "my new document"}
+
+
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB/textcircle $ meteor add mizzao:sharejs-codemirror
+                                              
+Changes to your project's package version selections:
+                                              
+coffeescript               added, version 1.0.11
+handlebars                 added, version 1.0.4
+mizzao:sharejs             added, version 0.7.5
+mizzao:sharejs-codemirror  added, version 4.12.0
+mongo-livedata             added, version 1.0.9
+
+                                              
+mizzao:sharejs-codemirror: ShareJS with the CodeMirror Editor
+
+
+=> Modified -- restarting.
+=> Meteor server restarted                    
+=> Meteor server restarted 
+
+<!-- This is textcircle.html -->
+
+<head>
+    <title>textcircle</title>
+</head>
+
+<body>
+    <h1>Welcome to TextCircle!</h1>
+
+    {{> editor}}
+</body>
+
+<template name="editor">
+    {{>sharejsCM docid=docid id="editor"}}
+</template>
+
+
+// This is textcircle.js
+
+this.Documents = new Mongo.Collection("documents");
+
+if (Meteor.isClient) {
+    Template.editor.helpers({
+        docid :function(){
+            var doc = Documents.findOne();
+            if (doc){
+                return doc._id;
+            }
+            else {
+                return undefined;
+        }
+    }
+    });
+}
+
+if (Meteor.isServer) {
+    Meteor.startup(function () {
+// code to run on server at startup
+if (!Documents.findOne()) {
+    Documents.insert( {title: "my new document"});
+}
+});
+}
+
+
+<!-- this is textcircle.html -->
+
+
+<head>
+  <title>textcircle</title>
+</head>
+
+<body>
+  <h1>Welcome to TextCircle!</h1>
+  {{> date_display}}
+  {{> editor}}
+</body>
+<template name="date_display">
+        {{current_date}}
+</template>
+
+<template name="editor">
+    {{>sharejsCM docid = docid id="editor"}}
+</template>
+
+/*this is textcircle.js*/
+
+this.Documents = new Mongo.Collection("documents");
+
+if (Meteor.isClient) {
+    Meteor.setInterval(function(){
+         Session.set("current_date", new Date());
+     }, 1000);
+   
+
+    Template.date_display.helpers({
+        current_date: function(){
+            return Session.get("current_date");;
+        }
+    });
+
+    Template.editor.helpers({
+        docid: function () {
+            var doc = Documents.findOne();
+            if (doc){
+                return doc._id;
+            }
+            else {
+                return undefined;
+            }
+        }
+    });
+}
+
+if (Meteor.isServer) {
+    Meteor.startup(function () {
+        if (!Documents.findOne()){
+          Documents.insert({title: "my new document"});
+      }
+  });
+}
+
+
+<!-- this is textcircle.html -->
+
+
+<head>
+  <title>textcircle</title>
+</head>
+
+<body>
+
+    <nav class="navbar-nav navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">TextCircle</a>
+        </div>   
+    </nav>
+    <div class="container top-margin">
+    <hr>
+        {{> editor}}
+    </div>
+</body>
+<template name="editor">
+    {{>sharejsCM docid = docid id="editor"}}
+</template>
+
+
+*this is textcircle.js*/
+
+this.Documents = new Mongo.Collection("documents");
+
+if (Meteor.isClient) {
+    Template.editor.helpers({
+        docid: function () {
+            var doc = Documents.findOne();
+            if (doc){
+                return doc._id;
+            }
+            else {
+                return undefined;
+            }
+        }
+    });
+}
+
+if (Meteor.isServer) {
+    Meteor.startup(function () {
+        if (!Documents.findOne()){
+          Documents.insert({title: "my new document"});
+        }
+    });
+}
+
+
+/* CSS declarations go here */
+.top-margin {
+    margin-top: 50px;
+}
+
+<!-- this is textcircle.html -->
+
+<head>
+  <title>textcircle</title>
+</head>
+
+<body>
+    <nav class="navbar-nav navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">TextCircle</a>
+        </div>   
+    </nav>
+
+    <div class="container top-margin">
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                {{> editor}}
+            </div>
+            <div class="col-md-6">
+                {{> viewer}}
+            </div>
+        </div>
+    </div>
+</body>
+
+<template name="editor">
+    {{>sharejsCM docid = docid onRender=config id="editor"}}
+</template>
+
+<template name="viewer">
+    <iframe id="viewer_iframe">
+        
+    </iframe>
+</template>
+
+
+/*this is textcircle.js*/
+
+this.Documents = new Mongo.Collection("documents");
+
+if (Meteor.isClient) {
+    Template.editor.helpers({
+        docid: function () {
+            var doc = Documents.findOne();
+            if (doc){
+                return doc._id;
+            }
+            else {
+                return undefined;
+            }
+        },
+        config: function() {
+            return function(editor){
+                editor.on('change', function(cm_editor, info){
+                    console.log(cm_editor.getValue());
+                    $("#viewer_iframe").contents().find("html").html(cm_editor.getValue())
+                });
+                
+            }
+        },
+    });
+}
+
+if (Meteor.isServer) {
+    Meteor.startup(function () {
+        if (!Documents.findOne()){
+          Documents.insert({title: "my new document"});
+        }
+    });
+}
+
+
+
+/* CSS declarations go here */
+
+.top-margin {
+    margin-top: 50px;
+}
+
+hr {
+   height: 5px;
+    color: purple;
+    background-color: purple;
+    border: none;
+}

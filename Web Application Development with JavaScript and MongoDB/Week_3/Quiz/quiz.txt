@@ -1,0 +1,150 @@
+Close
+Publish and subscribe MongoDB filters summary quiz
+
+10 questions
+
+1. 
+If you see a template event listener that looks like this:
+
+Template.jsclicker.events({ "click .mouseout":function(){ }})
+What class would you expect to see in the HTML tag that triggers the event?
+
+None of the above
+
+*mouseout
+
+jsclicker
+
+click
+
+2. 
+What is a very common reason for seeing the error message 'Uncaught syntax error: Unexpected token Y'?
+
+You have accidentally typed a Y.
+
+You have not closed a set of brackets.
+
+*You have not put commas between the items in a property set.
+
+A well known bug in the Meteor framework.
+
+3. Wrong
+Which of the following will provide the current user id if you run it inside a method? (select all that apply)
+
+this.user()._id
+
+*this.userId THIS
+
+Meteor.userId MAYBE THIS
+
+Meteor.user()._id
+
+4. 
+You have defined a method called testMethod. Which will happen if you call the following code in an event listener?
+
+Meteor.call('testMethod', function(){ 
+  console.log('method callback!');
+})
+  console.log('After the method!');
+
+*It will print 'After the method!' then 'method callback!'
+
+The method will not be invoked as methods do not take callbacks.
+
+The method will not call the callback, so it will only print 'After the method!'
+
+It will print 'method callback!' then 'After the method!'
+
+5. 
+You have a template that displays a list of documents from a collection. It has an event listener as follows:
+
+Template.documents.events({ 'click .js-load-document':function(event){
+
+// which variable would you access?
+
+}})
+
+Inside the event listener function, how would you access the data context for the template within which the event was triggered?
+
+Event.targetNOPE
+
+*This
+
+$(event.target).data()NOPE
+
+Documents.findOne()
+
+6. 
+Which of the following are 'meta data' about a document? (select all that apply)
+
+*The document title
+
+The text inside the document
+
+*The owner
+
+*The editing users
+
+7. 
+In the template, you have the following code:
+
+<input type="checkbox" id="myCheckbox" class="myCheckbox">
+In the javascript code, the following event listener has been defined:
+
+Template.docMeta.events({ "click #myCheckbox":function(event){ console.log("toggle!"); }})
+Which of the following are true? (select all that apply)
+
+*In the event listener, event.target.checked tells you the state of the checkbox.
+
+The event listener selector is wrong. The selector has to be '.myCheckbox'.
+
+*In the event listener, event.target.checked will have the value true or false.
+
+*The selector could also be '.myCheckbox'.
+
+8.Wrong 
+Which of the following are true? (select all that apply)
+
+Tip: read about allow and deny here:
+
+http://docs.meteor.com/#/full/allow
+
+Meteor allow and deny can control both read and write access.
+
+*Meteor publish and subscribe is used to control read access to the database.
+
+*Meteor methods are used to control write access to the database.
+
+*Meteor methods are used to control read access to the database.
+
+9. WRONG
+Where should the following code be placed in a Meteor application? (select all that apply)
+
+Meteor.publish("documents", function(){ return Documents.Find({});})
+
+In an isServer block.THISNOPE
+
+In a js file in the private folder.
+
+In a js file in the server folder.
+
+In an isClient block.THISNOPE
+
+10. 
+An `or' filter has 4 clauses, e.g.:
+
+$or:[ {test1:true}, {test2:true}, {test3:true}, {test4:true}]
+
+How many of the tests need to be true for an item in a collection to match the filter?
+
+2
+
+1
+
+3
+
+4
+3 questions unanswered
+Submit Quiz
+
+

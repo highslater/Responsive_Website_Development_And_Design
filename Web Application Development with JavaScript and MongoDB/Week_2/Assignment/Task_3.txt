@@ -1,0 +1,9 @@
+
+Task 3: Query a collection with Meteor MongoDB.
+
+Inside the textcircle example application folder, start up the application with the meteor command. 
+Then open another console window and, go into the application folder and run the appropriate command 
+to connect to the MongoDB server in the console. Note that you will need to have your app running. 
+Next run the appropriate MongoDB command to show a list of the collections in the MongoDB database.
+
+Take a screenshot showing the MongoDB command line interface with a list of collections visible.

@@ -1,0 +1,126 @@
+Close
+User accounts, packages and methods summary quiz
+
+10 questions
+
+1. 
+What is the purpose of the loginButtons template? (choose all that apply)
+
+To provide a wooden theme for your buttons.
+
+*To display information about who is logged in.
+
+To implement a Bootstrap login form.
+
+*To provide user login and registration forms.
+
+2. 
+Which of the following user accounts packages are provided by the Meteor Developer Group (clue - look them up on https://atmospherejs.com and check who the contributor is).
+
+art:accounts-ui
+
+universe:accounts-ui
+
+*accounts-ui
+
+*accounts-ui-unstyled
+
+3. 
+Which of the following are installed automatically when you install the Meteor framework? Select all that apply.
+
+*Node.js
+
+Apache
+
+Bootstrap
+
+*MongoDB
+
+4. 
+Which is the simplest way to retrieve a single item from a collection called 'documents'?
+
+Using the select function
+
+Using the find function
+
+Using the pretty function
+
+*Using the findOne function
+
+5. 
+Select all important things to look for when looking for Meteor packages (select all that apply)
+
+*Recent activity on the github page
+
+A cool name
+
+*Good documentation
+
+*Lots of downloads
+
+6. 
+Why is it ok for the server to insert data to the database, for example in a start up script, without calling a method?
+
+*The server is a trusted system of which we are in control.
+
+It is not actually possible to check what the server is inserting.
+
+The code in a method is eventually run on the server anyway.
+
+The server automatically checks all data it inserts.
+
+7. Wrong
+Create a new, blank application. Run the application. Access the Mongo shell and run the show databases command:
+
+db.getMongo().getDBNames()
+Which of the following databases do you see? Select all that apply.
+
+*local
+
+*admin
+
+meteor
+
+user
+
+8. 
+Create a new, blank application. Run the application. Run the command:
+
+meteor add accounts-password
+This adds the basic user authentication package. Now start the Meteor mongo shell. Which collections can you see in the database? Select all that apply.
+
+*meteor_accounts_loginServiceConfiguration
+
+meteor
+
+*users
+
+*system.indexes
+
+9. Wrong
+Go into the Mongo shell and look at the list of collections. Which of the following collections are created by the mizzao:sharejs package? Select all that apply.
+
+Hint check the documentation carefully https://atmospherejs.com/mizzao/sharejs
+
+documents
+
+docs
+
+users
+
+*ops
+
+10. 
+Create a new Meteor app. Which of the following packages are installed by default? Select all that apply.
+
+*insecure
+
+*jquery
+
+mizzao:sharejs
+
+*autopublish
+2 questions unanswered
+Submit Quiz
+
+

@@ -1,0 +1,349 @@
+Web Application Development with JavaScript and MongoDB:
+
+Module 2: User accounts, packages and methods
+
+use the core user accounts packages
+customise the user accounts UI using third party packages
+search for and add packages to an application
+query MongoDB collections from the command line
+control data write access using methods
+
+
+
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB/textcircle $ meteor search accounts-password
+Matching packages:                            
+3stack:accounts-password-hook        Overwrites Accounts.createUser to provid...
+accounts-password                    Password support for accounts
+acemtp:accounts-passwordless         Token-based one-time password (OTPW) aut...
+benjick:accounts-password-debugonly  Adds accounts-password with debugOnly
+immojun:rest-accounts-password       Get a login token to use with simple:rest
+poetic:accounts-passwordless         create and login users without requiring...
+poetic:accounts-passwordless-email   create and login users without requiring...
+simple:rest-accounts-password        Get a login token to use with simple:rest
+
+You can use 'meteor show' to get more information on a specific item.
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB/textcircle $ meteor add accounts-password
+                                                                                
+Changes to your project's package version selections:
+                                              
+accounts-base          added, version 1.2.2   
+accounts-password      added, version 1.1.4
+ddp-rate-limiter       added, version 1.0.0
+email                  added, version 1.0.8
+localstorage           added, version 1.0.5
+npm-bcrypt             added, version 0.7.8_2
+rate-limit             added, version 1.0.0
+service-configuration  added, version 1.0.5
+sha                    added, version 1.0.4
+srp                    added, version 1.0.4
+
+                                              
+accounts-password: Password support for accounts
+
+
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB/textcircle $ meteor search accounts-ui
+Matching packages:                            
+accounts-ui                                       Simple templates to add log...
+accounts-ui-unstyled                              Unstyled version of login w...
+alisalaah:accounts-ui-material                    Material-styled accounts-ui...
+alt:react-accounts-ui                             Alternative accounts ui usi...
+anbuselvan:accounts-ui-mailcheck                  The famous Mailcheck packag...
+anthonyastige:auto-guest-accounts-ui-bootstrap-3  Bootstrap-styled accounts-u...
+aristeuroriz:accounts-ui-bootstrap-3              Bootstrap-styled accounts-u...
+art:accounts-ui                                   Simple templates to add log...
+art:accounts-ui-unstyled                          Unstyled version of login w...
+barbatus:ng2-meteor-accounts-ui                   Meteor Accounts UI for Angu...
+bruck:accounts-ui-angular                         AngularJS wrapper for Ian's...
+carlosbaraza:accounts-ui-bootstrap-3-angular      AngularJS wrapper for ian:a...
+chuikoff:accounts-ui-bootstrap-4                  Bootstrap-styled accounts-u...
+cyloncourt:useraccounts-uikit                     Accounts Templates styled f...
+daoli:accounts-ui-bootstrap-3                     Bootstrap-styled accounts-u...
+dotansimha:accounts-ui-angular                    AngularJS wrapper for Meteo...
+elements:accounts-ui                              Account entry pages
+ge4r:accounts-ui-bootstrap-3-modal                Bootstrap-styled accounts-u...
+gimco:accounts-ui-bootstrap-3-latch               Latch integration for accou...
+gimco:accounts-ui-latch                           Latch integration for accou...
+halunka:useraccounts-ui                           Lighweight, reactive, isomo...
+ian:accounts-ui-bootstrap-3                       Bootstrap-styled accounts-u...
+iandouglas:accounts-ui-semantic-ui                Semantic UI styled accounts-ui
+jamielob:accounts-ui-no-dropdown                  Removes the dropdown functi...
+jaredmartin:gsdk-accounts-ui                      Accounts Modals Built with ...
+launux:accounts-ui-bootstrap-3                    Bootstrap-styled accounts-u...
+leesangwon:accounts-ui                            Accounts ui
+mfq:accounts-ui-bootstrap-3                       Bootstrap-styled accounts-u...
+mrt:accounts-ui-bootstrap-3                       Bootstrap styled version of...
+mrt:accounts-ui-bootstrap-3-blaze                 Bootstrap styled version of...
+mrt:accounts-ui-bootstrap-dropdown                Bootstrap styled version of...
+mrt:accounts-ui-bs3-and-blaze                     Bootstrap styled version of...
+npvn:accounts-ui-bootstrap-3                      accounts-ui re-styled to pl...
+pavlovich:accounts-ui-angular                     AngularJS wrapper for Meteo...
+rojepower:accounts-ui-bootstrap-3                 Bootstrap-styled accounts-u...
+shock:accounts-ui-bootstrap-3                     Bootstrap-styled accounts-u...
+space:accounts-ui                                 Application layer foundatio...
+sscaff1:accounts-ui-bootstrap-3                   Bootstrap-styled accounts-u...
+tomi:accounts-ui-semantic-js                      Accounts-ui template with s...
+universe:accounts-ui                              Accounts UI replacement for...
+urbanetic:accounts-ui                             Simple UI for Meteor Accounts
+
+You can use 'meteor show' to get more information on a specific item.
+
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB/textcircle $ meteor show accounts-ui
+Package: accounts-ui@1.1.6                    
+Maintainers: mdg                              
+Implies: accounts-base                        
+                                              
+A turn-key user interface for Meteor Accounts.
+
+To add Accounts and a set of login controls to an application, add the
+`accounts-ui`
+package and at least one login provider package:
+`accounts-password`, `accounts-facebook`, `accounts-github`,
+`accounts-google`, `accounts-twitter`, or `accounts-weibo`.
+
+Then simply add the `{{> loginButtons}}` helper to an HTML file.
+
+See the Meteor Accounts [project page](https://www.meteor.com/accounts) for
+more info.
+                                              
+Recent versions:                              
+  1.1.2  October 13th, 2014                   
+  1.1.3  October 28th, 2014
+  1.1.4  December 19th, 2014
+  1.1.5  March 17th, 2015
+  1.1.6  September 21st, 2015  installed
+
+Older and pre-release versions of accounts-ui have been hidden. To see all 39
+versions, run 'meteor show --show-all accounts-ui'.
+
+
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB/textcircle $ meteor add accounts-ui
+                                              
+Changes to your project's package version selections:
+                                              
+accounts-ui           added, version 1.1.6    
+accounts-ui-unstyled  added, version 1.1.8
+less                  added, version 2.5.1
+
+                                              
+accounts-ui: Simple templates to add login widgets to an app
+
+
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB/textcircle $ meteor list
+accounts-password          1.1.4  Password support for accounts
+accounts-ui                1.1.6  Simple templates to add login widgets to an...
+autopublish                1.0.4  (For prototyping only) Publish the entire d...
+blaze-html-templates       1.0.1  Compile HTML templates into reactive UI wit...
+ecmascript                 0.1.6* Compiler plugin that supports ES2015+ in al...
+es5-shim                   4.1.14  Shims and polyfills to improve ECMAScript ...
+insecure                   1.0.4  (For prototyping only) Allow all database w...
+jquery                     1.11.4  Manipulate the DOM using CSS selectors
+meteor-base                1.0.1  Packages that every Meteor app needs
+mizzao:sharejs-codemirror  4.12.0  ShareJS with the CodeMirror Editor
+mobile-experience          1.0.1  Packages for a great mobile user experience
+mongo                      1.1.3  Adaptor for using MongoDB and Minimongo ove...
+session                    1.1.1  Session variable
+standard-minifiers         1.0.2  Standard minifiers used with Meteor apps by...
+tracker                    1.0.9  Dependency tracker to allow reactive callbacks
+
+                                              
+* New versions of these packages are available! Run 'meteor update' to try to
+  update those packages to their latest versions. If your packages cannot be
+  updated further, try typing `meteor add <package>@<newVersion>` to see more
+  information.
+
+
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB/textcircle $ meteor search twbs
+Matching packages:                            
+twbs:bootstrap          The most popular front-end framework for developing r...
+twbs:bootstrap-noglyph  Bootstrap without the Glyphicons font (official): the...
+
+You can use 'meteor show' to get more information on a specific item.
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB/textcircle $ meteor add twbs:bootstrap
+                                              
+Changes to your project's package version selections:
+                                              
+twbs:bootstrap  added, version 3.3.6          
+
+                                              
+twbs:bootstrap: The most popular front-end framework for developing responsive,
+mobile first projects on the web.
+
+
+
+<!-- this is textcircle.html -->
+<head>
+  <title>textcircle</title>
+</head>
+
+<body>
+    <nav class="navbar-nav navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">TextCircle</a>
+            <p class="navbar-text navbar-right">{{> loginButtons}}</p>
+        </div>   
+    </nav>
+    <div class="container top-margin">
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                {{> editor}}
+            </div>
+            <div class="col-md-6">
+                {{> viewer}}
+            </div>
+        </div>
+    </div>
+</body>
+<template name="editor">
+    {{>sharejsCM docid = docid onRender=config id="editor"}}
+</template>
+
+<template name="viewer">
+    <iframe id="viewer_iframe">
+        
+    </iframe>
+</template>
+
+
+
+
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB/Week_2/textcircleWORKING $ meteor mongo
+MongoDB shell version: 2.6.7
+connecting to: 127.0.0.1:3001/meteor
+Welcome to the MongoDB shell.
+For interactive help, type "help".
+For more comprehensive documentation, see
+    http://docs.mongodb.org/
+Questions? Try the support group
+    http://groups.google.com/group/mongodb-user
+meteor:PRIMARY> show collections
+docs
+documents
+meteor_accounts_loginServiceConfiguration
+ops
+system.indexes
+users
+meteor:PRIMARY> db.documents.findOne()
+{ "_id" : "aoHNkc3H6QtWzxKiE", "title" : "my new document" }
+meteor:PRIMARY>db.documents.find.count()
+2016-02-14T13:59:52.959-0500 TypeError: Object function ( query , fields , limit , skip, batchSize, options ){
+    var cursor = new DBQuery( this._mongo , this._db , this ,
+                        this._fullName , this._massageObject( query ) , fields , limit , skip , batchSize , options || this.getQueryOptions() );
+
+    var connObj = this.getMongo();
+    var readPrefMode = connObj.getReadPrefMode();
+    if (readPrefMode != null) {
+        cursor.readPref(readPrefMode, connObj.getReadPrefTagSet());
+    }
+
+    return cursor;
+} has no method 'count'
+meteor:PRIMARY> db.documents.find().count()
+1
+ meteor:PRIMARY> db.users.findOne()
+null
+meteor:PRIMARY> db.users.findOne()
+{
+    "_id" : "fuqybDiNr6BXpgjbh",
+    "createdAt" : ISODate("2016-02-14T19:03:09.381Z"),
+    "services" : {
+        "password" : {
+            "bcrypt" : "$2a$10$8bcIVXknYwUjsTf4JXlt9ekravpHqPOpphp793xjMb5QycxVnjh3C"
+        },
+        "resume" : {
+            "loginTokens" : [
+                {
+                    "when" : ISODate("2016-02-14T19:03:09.393Z"),
+                    "hashedToken" : "ph/d4vQ4u/DFR0bV/zpKToDDZX1Et1FHPRy+/k2mj/k="
+                }
+            ]
+        }
+    },
+    "emails" : [
+        {
+            "address" : "highslater@hotmail.com",
+            "verified" : false
+        }
+    ]
+}
+meteor:PRIMARY> 
+
+
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB/Week_2/textcircleWORKING $ meteor list
+accounts-password          1.1.4  Password support for accounts
+accounts-ui                1.1.6  Simple templates to add login widgets to an...
+autopublish                1.0.4  (For prototyping only) Publish the entire d...
+blaze-html-templates       1.0.1  Compile HTML templates into reactive UI wit...
+ecmascript                 0.1.6* Compiler plugin that supports ES2015+ in al...
+es5-shim                   4.1.14  Shims and polyfills to improve ECMAScript ...
+insecure                   1.0.4  (For prototyping only) Allow all database w...
+jquery                     1.11.4  Manipulate the DOM using CSS selectors
+meteor-base                1.0.1  Packages that every Meteor app needs
+mizzao:sharejs-codemirror  4.12.0  ShareJS with the CodeMirror Editor
+mobile-experience          1.0.1  Packages for a great mobile user experience
+mongo                      1.1.3  Adaptor for using MongoDB and Minimongo ove...
+session                    1.1.1  Session variable
+standard-minifiers         1.0.2  Standard minifiers used with Meteor apps by...
+tracker                    1.0.9  Dependency tracker to allow reactive callbacks
+twbs:bootstrap             3.3.6  The most popular front-end framework for de...
+
+                                              
+* New versions of these packages are available! Run 'meteor update' to try to
+  update those packages to their latest versions. If your packages cannot be
+  updated further, try typing `meteor add <package>@<newVersion>` to see more
+  information.
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB/Week_2/textcircleWORKING $ meteor remove accounts-ui 
+                                              
+Changes to your project's package version selections:
+                                              
+accounts-ui           removed from your project
+accounts-ui-unstyled  removed from your project
+less                  removed from your project
+
+accounts-ui: removed dependency               
+
+
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB/Week_2/textcircleWORKING $ meteor add accounts-ui-unstyled
+                                              
+Changes to your project's package version selections:
+                                              
+accounts-ui-unstyled  added, version 1.1.8    
+less                  added, version 2.5.1
+
+                                              
+accounts-ui-unstyled: Unstyled version of login widgets
+
+
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB/Week_2/textcircleWORKING $ meteor remove accounts-ui-unstyled
+                                              
+Changes to your project's package version selections:
+                                              
+accounts-ui-unstyled  removed from your project
+less                  removed from your project
+
+accounts-ui-unstyled: removed dependency 
+
+
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB/Week_2/textcircleWORKING $ meteor add accounts-ui-bootstrap-3
+ => Errors while parsing arguments:           
+                                              
+While adding package accounts-ui-bootstrap-3:
+error: no such package
+
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB/Week_2/textcircleWORKING $ meteor add accounts-ui-bootstrap3
+ => Errors while parsing arguments:           
+                                              
+While adding package accounts-ui-bootstrap3:
+error: no such package
+
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB/Week_2/textcircleWORKING $ meteor add ian:accounts-ui-bootstrap-3
+                                              
+Changes to your project's package version selections:
+                                              
+anti:i18n                    added, version 0.4.3
+ian:accounts-ui-bootstrap-3  added, version 1.2.89
+stylus                       added, version 2.511.1
+
+                                              
+ian:accounts-ui-bootstrap-3: Bootstrap-styled accounts-ui with multi-language support.
+highslater@mint64 ~/Programming/Coursera/Working On/Web Application Development with JavaScript and MongoDB/Week_2/textcircleWORKING $ 

@@ -1,0 +1,46 @@
+
+Task 2: Remove the insecure package and try to insert an item into a collection in the Javascript console.
+1.) Add a line to the top of your application’s .js file as follows;
+
+Songs = new Mongo.Collection("songs");
+
+2.) Run the appropriate Meteor command to remove the insecure package.
+3.) Start the app and look at it in your browser, with the browser console open.
+4.) Run the appropriate Javascript code in your browser Javascript console to insert an item into the Songs collection. 
+5.) Take a screenshot showing the results of this in your browser console.
+
+
+
+1.)
+
+Songs = new Mongo.Collection("songs");
+
+if (Meteor.isClient) {
+  // counter starts at 0
+  Session.setDefault('counter', 0);
+
+  Template.hello.helpers({
+    counter: function () {
+      return Session.get('counter');
+    }
+  });
+
+  Template.hello.events({
+    'click button': function () {
+      // increment the counter when button is clicked
+      Session.set('counter', Session.get('counter') + 1);
+    }
+  });
+}
+
+if (Meteor.isServer) {
+  Meteor.startup(function () {
+    // code to run on server at startup
+  });
+}
+
+2.)
+
+3.)
+4.)
+5.)
