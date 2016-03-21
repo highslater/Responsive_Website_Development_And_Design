@@ -64,6 +64,12 @@ image_share.css  image_share.html  image_share.js
 ```
 #####image_share.css
 
+```css 
+
+/* CSS declarations go here */
+
+```
+
 #####image_share.html
 
 #####image_share.js
