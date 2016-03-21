@@ -16,7 +16,7 @@ image_share_end_module1.zip
 
 URL for this lesson
 Install Meteor: https://www.meteor.com/install
-
+```console
 highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design $ meteor --version
 Meteor 1.2.1
 highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design $ which meteor
@@ -38,6 +38,7 @@ If you are new to Meteor, try some of the learning resources here:
 highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first/dev $ cd image_share/
 highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first/dev/image_share $ ls
 image_share.css  image_share.html  image_share.js
+```
 
 ```console
 highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first/dev/image_share $ meteor
