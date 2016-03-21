@@ -17,10 +17,14 @@ image_share_end_module1.zip
 URL for this lesson
 Install Meteor: https://www.meteor.com/install
 ```console
+
 highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design $ meteor --version
 Meteor 1.2.1
 highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design $ which meteor
 /usr/local/bin/meteor
+```
+
+```console
 highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first $ mkdir dev
 highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first $ cd dev/
 
