@@ -39,7 +39,7 @@ highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Developmen
 highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first/dev/image_share $ ls
 image_share.css  image_share.html  image_share.js
 
-
+```
 highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first/dev/image_share $ meteor
 [[[[[ ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js
 Development/CourseWork_first/dev/image_share ]]]]]
@@ -53,7 +53,8 @@ Development/CourseWork_first/dev/image_share ]]]]]
 highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first/dev/image_share $ 
  
 URL for this lesson
-Meteor template documentation: http://docs.meteor.com/#/full/livehtmltemplates   
+Meteor template documentation: http://docs.meteor.com/#/full/livehtmltemplates 
+```  
 
 ```html
 <head>
