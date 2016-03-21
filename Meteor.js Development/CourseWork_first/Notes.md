@@ -55,7 +55,7 @@ highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Developmen
 URL for this lesson
 Meteor template documentation: http://docs.meteor.com/#/full/livehtmltemplates   
 
-`<head>
+```<head>
   <title>image_share</title>
 </head>
 
@@ -67,4 +67,4 @@ Meteor template documentation: http://docs.meteor.com/#/full/livehtmltemplates
 
 <template name="images">
   <img src="laptops.jpg" alt="lots of laptop screens"/>
-</template>  `                             
+</template>  ```                             
