@@ -19,19 +19,24 @@ URL for this lesson
 Install Meteor: https://www.meteor.com/install
 ```Shell
 
-highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design $ meteor --version
+highslater@mint64 ~/Programming/Coursera/Completed/
+Responsive_Website_Development_And_Design $ meteor --version
 Meteor 1.2.1
-highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design $ which meteor
+highslater@mint64 ~/Programming/Coursera/Completed/
+Responsive_Website_Development_And_Design $ which meteor
 /usr/local/bin/meteor
 ```
 
 ```Shell
-highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first 
+highslater@mint64 ~/Programming/Coursera/Completed/
+Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first 
 $ mkdir dev
-highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first 
+highslater@mint64 ~/Programming/Coursera/Completed/
+Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first 
 $ cd dev/
 
-highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first/dev 
+highslater@mint64 ~/Programming/Coursera/Completed/
+Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first/dev 
 $ meteor create image_share
 Created a new Meteor app in 'image_share'.    
 
@@ -43,15 +48,18 @@ If you are new to Meteor, try some of the learning resources here:
   https://www.meteor.com/learn                
                                      
 
-highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first/dev 
+highslater@mint64 ~/Programming/Coursera/Completed/
+Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first/dev 
 $ cd image_share/
-highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/
+highslater@mint64 ~/Programming/Coursera/Completed/
+Responsive_Website_Development_And_Design/Meteor.js Development/
 CourseWork_first/dev/image_share $ ls
 image_share.css  image_share.html  image_share.js
 ```
 
 ```Shell
-highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/
+highslater@mint64 ~/Programming/Coursera/Completed/
+Responsive_Website_Development_And_Design/Meteor.js Development/
 CourseWork_first/dev/image_share $ meteor
 [[[[[ ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js
 Development/CourseWork_first/dev/image_share ]]]]]
@@ -62,7 +70,8 @@ Development/CourseWork_first/dev/image_share ]]]]]
 
 => App running at: http://localhost:3000/
 ^C
-highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/
+highslater@mint64 ~/Programming/Coursera/Completed/
+Responsive_Website_Development_And_Design/Meteor.js Development/
 CourseWork_first/dev/image_share $ 
  
 URL for this lesson
