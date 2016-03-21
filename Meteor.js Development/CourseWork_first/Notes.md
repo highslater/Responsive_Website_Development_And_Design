@@ -16,7 +16,7 @@ image_share_end_module1.zip
 
 URL for this lesson
 Install Meteor: https://www.meteor.com/install
-```shell
+```Shell
 
 highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design $ meteor --version
 Meteor 1.2.1
@@ -24,7 +24,7 @@ highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Developmen
 /usr/local/bin/meteor
 ```
 
-```shell
+```Shell
 highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first $ mkdir dev
 highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first $ cd dev/
 
@@ -44,7 +44,7 @@ highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Developmen
 image_share.css  image_share.html  image_share.js
 ```
 
-```shell
+```Shell
 highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first/dev/image_share $ meteor
 [[[[[ ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js
 Development/CourseWork_first/dev/image_share ]]]]]
@@ -61,7 +61,7 @@ URL for this lesson
 Meteor template documentation: http://docs.meteor.com/#/full/livehtmltemplates 
 ```  
 
-```html
+```HTML
 <head>
   <title>image_share</title>
 </head>
@@ -76,7 +76,7 @@ Meteor template documentation: http://docs.meteor.com/#/full/livehtmltemplates
   <img src="laptops.jpg" alt="lots of laptop screens"/>
 </template> 
  ```     
-```javascript
+```JavaScript
  if (Meteor.isClient) {
   // counter starts at 0
   Session.setDefault('counter', 0);
