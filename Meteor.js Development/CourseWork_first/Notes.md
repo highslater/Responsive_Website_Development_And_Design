@@ -71,4 +71,29 @@ Meteor template documentation: http://docs.meteor.com/#/full/livehtmltemplates
 <template name="images">
   <img src="laptops.jpg" alt="lots of laptop screens"/>
 </template> 
- ```                             
+ ```     
+```javascript
+ if (Meteor.isClient) {
+  // counter starts at 0
+  Session.setDefault('counter', 0);
+
+  Template.hello.helpers({
+    counter: function () {
+      return Session.get('counter');
+    }
+  });
+
+  Template.hello.events({
+    'click button': function () {
+      // increment the counter when button is clicked
+      Session.set('counter', Session.get('counter') + 1);
+    }
+  });
+}
+
+if (Meteor.isServer) {
+  Meteor.startup(function () {
+    // code to run on server at startup
+  });
+} 
+```                      
