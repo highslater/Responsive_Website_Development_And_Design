@@ -85,6 +85,7 @@ URL for this lesson
 Meteor template documentation: http://docs.meteor.com/#/full/livehtmltemplates
 
 ```  
+#####image_share.html
 
 ```HTML
 
@@ -103,6 +104,8 @@ Meteor template documentation: http://docs.meteor.com/#/full/livehtmltemplates
 </template>
 
  ```   
+
+#####image_share.js
 
 ```JavaScript
 
