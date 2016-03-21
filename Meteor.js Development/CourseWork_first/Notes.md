@@ -72,6 +72,25 @@ image_share.css  image_share.html  image_share.js
 
 #####image_share.html
 
+```HTML
+
+<head>
+  <title>image_share</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+    <button>Click Me</button>
+    <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+ ```   
+
 #####image_share.js
 
 ```JavaScript
