@@ -165,3 +165,4 @@ Meteor template documentation: http://docs.meteor.com/#/full/livehtmltemplates
 
 
 
+![Minion](http://octodex.github.com/images/minion.png)
