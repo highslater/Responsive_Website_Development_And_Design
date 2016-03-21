@@ -55,7 +55,7 @@ highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Developmen
 URL for this lesson
 Meteor template documentation: http://docs.meteor.com/#/full/livehtmltemplates   
 
-```
+```html
 <head>
   <title>image_share</title>
 </head>
