@@ -1,6 +1,6 @@
-##Module 1
+###Module 1
 
-###Learning outcomes
+####Learning outcomes
 
 By the end of this module, you will be able to:
 Install Meteor tools
