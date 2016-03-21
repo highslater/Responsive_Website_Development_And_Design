@@ -53,4 +53,18 @@ Development/CourseWork_first/dev/image_share ]]]]]
 highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first/dev/image_share $ 
  
 URL for this lesson
-Meteor template documentation: http://docs.meteor.com/#/full/livehtmltemplates                                  
+Meteor template documentation: http://docs.meteor.com/#/full/livehtmltemplates   
+
+<head>
+  <title>image_share</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> images}}
+</body>
+
+<template name="images">
+  <img src="laptops.jpg" alt="lots of laptop screens"/>
+</template>                               
