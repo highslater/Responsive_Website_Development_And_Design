@@ -1,6 +1,6 @@
 #Module 1
 
-Learning outcomes
+##Learning outcomes
 
 By the end of this module, you will be able to:
 Install Meteor tools
@@ -9,16 +9,17 @@ Edit a template
 Define a template helper
 Define template event listeners
 
-URL for this module
+###URL for this module
 We will be using the Meteor platform (software for building web and mobile apps in JavaScript). 
 Meteor's website can be found here: https://www.meteor.com/
 
 
-Here is the code written during this module:
+###Here is the code written during this module:
 image_share_end_module1.zip
 
-URL for this lesson
+###URL for this lesson
 Install Meteor: https://www.meteor.com/install
+
 ```Shell
 
 highslater@mint64 ~/Programming/Coursera/Completed/
@@ -27,9 +28,11 @@ Meteor 1.2.1
 highslater@mint64 ~/Programming/Coursera/Completed/
 Responsive_Website_Development_And_Design $ which meteor
 /usr/local/bin/meteor
+
 ```
 
 ```Shell
+
 highslater@mint64 ~/Programming/Coursera/Completed/
 Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first 
 $ mkdir dev
@@ -57,9 +60,11 @@ highslater@mint64 ~/Programming/Coursera/Completed/
 Responsive_Website_Development_And_Design/Meteor.js Development/
 CourseWork_first/dev/image_share $ ls
 image_share.css  image_share.html  image_share.js
+
 ```
 
 ```Shell
+
 highslater@mint64 ~/Programming/Coursera/Completed/
 Responsive_Website_Development_And_Design/Meteor.js Development/
 CourseWork_first/dev/image_share $ meteor
@@ -77,10 +82,12 @@ Responsive_Website_Development_And_Design/Meteor.js Development/
 CourseWork_first/dev/image_share $ 
  
 URL for this lesson
-Meteor template documentation: http://docs.meteor.com/#/full/livehtmltemplates 
+Meteor template documentation: http://docs.meteor.com/#/full/livehtmltemplates
+
 ```  
 
 ```HTML
+
 <head>
   <title>image_share</title>
 </head>
@@ -93,9 +100,12 @@ Meteor template documentation: http://docs.meteor.com/#/full/livehtmltemplates
 
 <template name="images">
   <img src="laptops.jpg" alt="lots of laptop screens"/>
-</template> 
- ```     
+</template>
+
+ ```   
+
 ```JavaScript
+
  if (Meteor.isClient) {
   // counter starts at 0
   Session.setDefault('counter', 0);
@@ -119,4 +129,5 @@ if (Meteor.isServer) {
     // code to run on server at startup
   });
 } 
+
 ```                      
