@@ -62,6 +62,8 @@ CourseWork_first/dev/image_share $ ls
 image_share.css  image_share.html  image_share.js
 
 ```
+#####image_share.html
+#####image_share.js
 
 ```Shell
 
