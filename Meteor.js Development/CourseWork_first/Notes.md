@@ -368,6 +368,8 @@ if (Meteor.isServer) {
   console.log("I am the server");
 }
 
+```
+
 
 #####image_share.html
 
