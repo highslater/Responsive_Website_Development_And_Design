@@ -447,6 +447,7 @@ if (Meteor.isServer) {
 ###Module 1 Assignment:
 
 Submit your assignment
+
 Title
 
 Assignment: Install meteor and edit some templates
