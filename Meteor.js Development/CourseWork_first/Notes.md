@@ -152,7 +152,7 @@ Meteor template documentation: http://docs.meteor.com/#/full/livehtmltemplates
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+  <h1>Welcome to Coursera!</h1>
 
   {{> images}}
 </body>
@@ -162,6 +162,59 @@ Meteor template documentation: http://docs.meteor.com/#/full/livehtmltemplates
 </template>
 
  ```   
+#####image_share.js
+
+```JavaScript
+
+if (Meteor.isClient) {
+  console.log("I am the client");
+}
+
+if (Meteor.isServer) {
+  console.log("I am the server");
+}
+
+```
+#####image_share.html
+
+```HTML
+
+<head>
+  <title>image_share</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> images}}
+</body>
+
+<template name="images">
+  <img src="{{img_src}}" alt="{{img_alt}}"/>
+</template>
+
+```
+
+#####image_share.js
+
+```JavaScript
+
+if (Meteor.isClient) {
+  img_data = {
+    img_src : "laptops.jpg",
+    img_alt : "some laptops"
+  }
+  Template.images.helpers(img_data);
+}
+
+if (Meteor.isServer) {
+  console.log("I am the server");
+}
+
+```
+
+
+
 
 
 
