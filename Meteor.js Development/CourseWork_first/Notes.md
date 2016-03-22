@@ -272,6 +272,8 @@ URL for this lesson
 
 Search for Meteor packages online: https://atmospherejs.com/
 
+```Console
+
 highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first/dev/image_share $ meteor search .
 <
 <
@@ -299,6 +301,8 @@ twbs:bootstrap  added, version 3.3.6
                                               
 twbs:bootstrap: The most popular front-end framework for developing responsive, mobile first
 projects on the web.
+
+```
 
 #####image_share.html
 
