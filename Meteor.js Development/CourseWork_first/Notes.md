@@ -456,7 +456,7 @@ Once meteor is installed, open up the console or terminal in your operating syst
 
 Take a screenshot showing what meteor prints to the console when you run the app creation command.
 
-![Task_1.png](http://octodex.github.com/images/minion.png)
+![Task_1.png]()
 Take a screenshot showing what meteor prints to the console when you run the app creation command.
 ####Task 2: Run the app and view it in your web browser
 
@@ -464,7 +464,7 @@ In the console, run the command to run your newly created meteor app. Point your
 
 Take another screenshot, showing the app running in your web browser and upload it here. Make sure the address bar of the web browser is visible.
  
-![Task_2.png](http://octodex.github.com/images/minion.png)
+![Task_2.png]()
 
 Take another screenshot, showing the app running in your web browser and upload it here. Make sure the address bar of the web browser is visible.
 ####Task 3: Edit the page heading
@@ -473,7 +473,7 @@ Edit the template code (.html file) so that it displays a heading 'Hello from he
 
 Upload a screenshot showing how this app looks in the web browser.
 
-![Task_3.png](http://octodex.github.com/images/minion.png)
+![Task_3.png]()
 
 Edit the page heading the upload a screenshot showing how this app looks in the web browser.
 ####Task 4: Create a template helper
@@ -482,6 +482,6 @@ Now edit the template helper (.js file) and template code (.html file) so that t
 
 Take a screenshot of your web browser running the application and upload it here.
 
-![Task_4.png](http://octodex.github.com/images/minion.png)
+![Task_4.png]()
 
 Take a screenshot of your web browser running the application that says 'The time now is: now', and upload it here.
