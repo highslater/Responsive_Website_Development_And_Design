@@ -367,3 +367,77 @@ if (Meteor.isClient) {
 if (Meteor.isServer) {
   console.log("I am the server");
 }
+
+
+#####image_share.html
+
+```HTML
+
+<head>
+  <title>image_share</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+    <div class="container">
+          {{> images}}
+    </div>
+    <!-- / container -->
+</body>
+        
+<template name="images">
+    <div class="row">
+        {{#each images}}
+        <div class="col-xs-12 col-md-3">
+            <div class="thumbnail">
+                <img src="{{img_src}}" alt="{{img_alt}}" class="js-image"/>
+                <div class="caption">
+                    <h3>Thumbnail Label</h3>
+                    <p>description of image</p>
+                </div>
+            </div>
+        </div>
+        <!-- / col -->
+          {{/each}}
+    </div>
+    <!-- / row -->
+</template>
+
+```
+
+
+#####image_share.js
+
+```JavaScript
+
+
+if (Meteor.isClient) {
+  var img_data = [
+  {
+      img_src : "laptops.jpg",
+      img_alt : "some laptops"
+   },
+   {
+      img_src : "bass.jpg",
+      img_alt : "a bass player"
+   },
+   {
+      img_src : "beard.jpg",
+      img_alt : "some musicians with beards"
+   }
+
+    ];
+  Template.images.helpers({images: img_data});
+
+  Template.images.events({
+    'click .js-image': function(event){
+     $(event.target).css("width", "50px");
+    }
+  });
+}
+
+if (Meteor.isServer) {
+  console.log("I am the server");
+}
+
+```
