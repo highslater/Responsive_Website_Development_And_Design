@@ -200,11 +200,64 @@ if (Meteor.isServer) {
 ```JavaScript
 
 if (Meteor.isClient) {
-  img_data = {
+  var img_data = {
     img_src : "laptops.jpg",
     img_alt : "some laptops"
   }
   Template.images.helpers(img_data);
+}
+
+if (Meteor.isServer) {
+  console.log("I am the server");
+}
+
+```
+
+#####image_share.html
+
+```HTML
+
+<head>
+  <title>image_share</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> images}}
+</body>
+
+<template name="images">
+{{#each images}}
+  <img src="{{img_src}}" alt="{{img_alt}}"/>
+  {{/each}}
+}
+}
+</template>
+
+```
+
+#####image_share.js
+
+```JavaScript
+
+if (Meteor.isClient) {
+  var img_data = [
+  {
+      img_src : "laptops.jpg",
+      img_alt : "some laptops"
+   },
+   {
+      img_src : "bass.jpg",
+      img_alt : "a bass player"
+   },
+   {
+      img_src : "beard.jpg",
+      img_alt : "some musicians with beards"
+   }
+
+    ];
+  Template.images.helpers({images: img_data});
 }
 
 if (Meteor.isServer) {
@@ -218,4 +271,4 @@ if (Meteor.isServer) {
 
 
 
-********** ![Minion](http://octodex.github.com/images/minion.png)
+![Minion](http://octodex.github.com/images/minion.png)
