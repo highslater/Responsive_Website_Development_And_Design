@@ -218,4 +218,4 @@ if (Meteor.isServer) {
 
 
 
-![Minion](http://octodex.github.com/images/minion.png)
+********** ![Minion](http://octodex.github.com/images/minion.png)
