@@ -457,6 +457,7 @@ Once meteor is installed, open up the console or terminal in your operating syst
 Take a screenshot showing what meteor prints to the console when you run the app creation command.
 
 ![Task_1.png]()
+
 Take a screenshot showing what meteor prints to the console when you run the app creation command.
 ####Task 2: Run the app and view it in your web browser
 
