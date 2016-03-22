@@ -448,8 +448,7 @@ if (Meteor.isServer) {
 
 Submit your assignment
 
-#####Title
-#####Assignment: Install meteor and edit some templates
+#####Title: Assignment: Install meteor and edit some templates
 
 Task 1: Install meteor and create a starter app
 
