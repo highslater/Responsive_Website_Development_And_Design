@@ -232,7 +232,7 @@ if (Meteor.isServer) {
 <template name="images">
 {{#each images}}
   <img src="{{img_src}}" alt="{{img_alt}}"/>
-  {{/each}}
+{{/each}}
 
 </template>
 
@@ -278,25 +278,6 @@ highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Developmen
 < CODE OMMITTED >
 <
 <
-Matching releases:                            
-CORDOVA-PREVIEW      An experimental release of meteor with Cordova support.
-EKATE-HAX-WEEK       HAX HAX HAX Distribution
-GITHUBBLE            Release for githubble.meteor.com.
-METEOR               The Official Meteor Distribution
-METEOR-CORE          An experimental release of meteor.
-WINDOWS-PREVIEW      Preview of Meteor on Windows
-diegosampaio:METEOR  meteor 1.0.0 compatible
-ekate:METEOR-SHOW    Meteor Shows Things
-ekate:REL-TEST       test
-ekate:TEST           Packaging UX Wrangling
-glasser:PUBLISHTEST  Test release for isopack-cache branch.
-glasser:TPS-PREVIEW  Preview releases for tool performance and stability work.
-glasser:UPDATE-TEST  The official Meteor distribution.
-jboulhous:IO         io meteor distribution
-jrudio:METEOR        Meteor modified with desktop support
-konecty:METEOR       meteor 1.0.0 compatible
-lawshe:FULLPAGE      Meteor smart package for FullPage.js. Create full screen pages fast and ...
-pward123:METEOR      meteor-tool with Npm.depends() support for git+ssh urls
 
 You can use 'meteor show' to get more information on a specific item.
 
@@ -348,7 +329,7 @@ projects on the web.
             </div>
         </div>
         <!-- / col -->
-          {{/each}}
+        {{/each}}
     </div>
     <!-- / row -->
 </template>
