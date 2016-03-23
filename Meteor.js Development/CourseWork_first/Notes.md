@@ -1,4 +1,3 @@
-![Minion](http://octodex.github.com/images/minion.png)
 ###Module 1
 
 ####Learning outcomes
