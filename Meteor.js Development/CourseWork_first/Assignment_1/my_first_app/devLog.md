@@ -19,6 +19,7 @@
 
 ```
 
+
 #####my_first_app.js
 
 ```JavaScript
@@ -35,6 +36,7 @@ if (Meteor.isServer) {
 }
 
 ```
+
 
 #####my_first_app.js
 
