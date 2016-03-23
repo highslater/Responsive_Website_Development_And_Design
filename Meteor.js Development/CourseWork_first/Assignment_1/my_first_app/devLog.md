@@ -78,6 +78,9 @@ session               1.1.1  Session variable
 standard-minifiers    1.0.2  Standard minifiers used with Meteor apps by default.
 tracker               1.0.9  Dependency tracker to allow reactive callbacks
 
+* New versions of these packages are available! Run 'meteor update' to try to update those
+packages to their latest versions. If your packages cannot be updated further, try typing
+`meteor add <package>@<newVersion>` to see more information.
 
 ```
 
