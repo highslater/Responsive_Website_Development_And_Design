@@ -84,7 +84,7 @@ packages to their latest versions. If your packages cannot be updated further, t
 
 ```
 
-
+#####<my_first_app class="js"></my_first_app>
 ```JavaScript
 
 if (Meteor.isClient) {
