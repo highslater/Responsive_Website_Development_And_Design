@@ -94,7 +94,7 @@ packages to their latest versions. If your packages cannot be updated further, t
 if (Meteor.isClient) {
 
   var momentTIME = moment().format('LT'),
-       momentDATE = moment().format('MMMM Do YYYY');
+      momentDATE = moment().format('MMMM Do YYYY');
 
   Template.time.helpers({dateString: momentDATE, time: momentTIME});
 }
