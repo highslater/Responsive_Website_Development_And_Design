@@ -1,4 +1,4 @@
-####my_first_app.html
+#####my_first_app.html
 
 ```HTML
 
@@ -19,7 +19,7 @@
 
 ```
 
-####my_first_app.js
+#####my_first_app.js
 
 ```JavaScript
 
@@ -36,7 +36,7 @@ if (Meteor.isServer) {
 
 ```
 
-####my_first_app.js
+#####my_first_app.js
 
 ```CSS
 
