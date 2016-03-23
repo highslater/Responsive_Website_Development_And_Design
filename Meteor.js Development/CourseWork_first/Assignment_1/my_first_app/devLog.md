@@ -54,7 +54,10 @@ body {
 
 ```
 
+#####Install moment.js and update my_first_app
+
 ```Console
+
 highslater@mint64 ~/Programming/Coursera/Completed/
 Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first/Assignment_1/my_first_app 
 $ meteor add momentjs:moment
