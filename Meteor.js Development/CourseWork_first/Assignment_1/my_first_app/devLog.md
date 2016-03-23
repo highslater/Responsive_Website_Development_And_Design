@@ -64,7 +64,6 @@ momentjs:moment  added, version 2.12.0
 momentjs:moment: Moment.js (official): parse, validate, manipulate, and display dates -
 official Meteor packaging
 
-
 highslater@mint64 ~/Programming/Coursera/Completed/
 Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork_first/Assignment_1/my_first_app 
 $ meteor list
