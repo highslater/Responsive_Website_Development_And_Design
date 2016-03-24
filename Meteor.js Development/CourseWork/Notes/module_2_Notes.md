@@ -19,6 +19,7 @@ image_share_mod_2.zip
 URL for this lesson
 Collection.find: http://docs.meteor.com/#/full/find
 
+####Create a collection of images
 
 #####image_share.js
 
