@@ -4,7 +4,6 @@ Welcome to the second module of 'Introduction to Meteor.js Development'! In this
 
 ####Learning outcomes:
 
-
 By the end of the module you will be able to:
 
 Create Mongo Collections
