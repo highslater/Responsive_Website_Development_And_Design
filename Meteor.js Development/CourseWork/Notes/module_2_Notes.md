@@ -202,6 +202,7 @@ if (Meteor.isServer) {
 ```
 
 ######image_share.css 
+---
 
 ```CSS
 
