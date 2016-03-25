@@ -20,9 +20,9 @@ image_share_mod_2.zip
 ####URL for this lesson
 Collection.find: http://docs.meteor.com/#/full/find
 
-####Create a collection of images
+#####Create a collection of images
 
-#####image_share.js
+######image_share.js
 
 ```JavaScript
 
@@ -76,7 +76,7 @@ I20160324-13:58:45.615(-4)? I am the server
 
 ```
 
-#####image_share.js
+######image_share.js
 
 ```JavaScript
 
@@ -108,7 +108,7 @@ if (Meteor.isServer) {
 
 ```
 
-#####image_share.html
+######image_share.html
 
 ```HTML
 
@@ -147,7 +147,7 @@ if (Meteor.isServer) {
 
 ```
 
-#####image_share.js 
+######image_share.js 
 
 ```JavaScript
 
@@ -176,7 +176,7 @@ if (Meteor.isClient) {
 }
 
 ```
-#####startup.js 
+######startup.js 
 
 ```JavaScript
 
@@ -199,7 +199,7 @@ if (Meteor.isServer) {
 
 ```
 
-#####image_share.css 
+######image_share.css 
 
 ```CSS
 
