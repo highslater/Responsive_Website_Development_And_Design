@@ -222,7 +222,7 @@ if (Meteor.isServer) {
 Collection.find:  
 http://docs.meteor.com/#/full/find
 
-#####Add an imagine rating function: Updating and sorting
+#####Add an image rating function: Updating and sorting
 
 ```Console
 
