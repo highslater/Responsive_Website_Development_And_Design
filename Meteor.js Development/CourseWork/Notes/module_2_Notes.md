@@ -1,5 +1,4 @@
-#Introduction to Meteor.js Development
-
+#Introduction to Meteor.js Development  
 ##Module 2
 
 Welcome to the second module of 'Introduction to Meteor.js Development'! In this course we will be creating  
