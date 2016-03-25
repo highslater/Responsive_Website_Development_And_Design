@@ -2,7 +2,7 @@
 
 ##Module 2
 
-Welcome to the second module of 'Introduction to Meteor.js Development'! In this course we will be creating
+Welcome to the second module of 'Introduction to Meteor.js Development'! In this course we will be creating  
 Mongo Collections and using Mongo find and insert operations. In addition, we will be looking at how to control a Bootstrap modal from Meteor and we will be using third party Meteor packages to add functionality. Enjoy!
 
 ###Learning outcomes:
