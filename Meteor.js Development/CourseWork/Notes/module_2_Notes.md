@@ -221,3 +221,18 @@ if (Meteor.isServer) {
 ####URL for this lesson
 Collection.find:  
 http://docs.meteor.com/#/full/find
+
+#####Add an imagine rating function: Updating and sorting
+
+```Console
+
+highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork/dev/image_share $ meteor add barbatus:stars-rating
+                                              
+Changes to your project's package version selections:
+                                              
+barbatus:stars-rating  added, version 1.0.7   
+less                   added, version 2.5.1
+                                         
+barbatus:stars-rating: Stars rating control  
+
+```
