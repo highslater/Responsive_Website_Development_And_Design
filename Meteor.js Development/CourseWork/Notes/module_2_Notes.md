@@ -22,7 +22,8 @@ Here is a zip file containing the application from the videos:
 image_share_mod_2.zip
 
 ####URL for this lesson
-Collection.find: http://docs.meteor.com/#/full/find
+Collection.find:  
+http://docs.meteor.com/#/full/find
 
 #####Create a collection of images
 
@@ -217,4 +218,5 @@ if (Meteor.isServer) {
 ```
 
 ####URL for this lesson
-Collection.find: http://docs.meteor.com/#/full/find
+Collection.find:  
+http://docs.meteor.com/#/full/find
