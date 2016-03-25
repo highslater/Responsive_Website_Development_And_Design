@@ -15,7 +15,8 @@ Control a Bootstrap modal from Meteor
 Use third party Meteor packages to add functionality
 
 ####URL for this module: 
-Meteor collections: http://docs.meteor.com/#/full/mongo_collection
+Meteor collections:  
+http://docs.meteor.com/#/full/mongo_collection
 
 Here is a zip file containing the application from the videos:
 image_share_mod_2.zip
