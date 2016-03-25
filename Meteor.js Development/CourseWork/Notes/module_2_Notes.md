@@ -106,3 +106,107 @@ if (Meteor.isServer) {
 }
 
 ```
+
+#####image_share.html
+
+```HTML
+
+
+
+<head>
+  <title>image_share</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+    <div class="container">
+          {{> images}}
+    </div>
+    <!-- / container -->
+</body>
+        
+<template name="images">
+    <div class="row">
+        {{#each images}}
+        <div class="col-xs-12 col-md-3" id="{{_id}}">
+            <div class="thumbnail">
+                <img src="{{img_src}}" alt="{{img_alt}}" class="js-image"/>
+                <div class="caption">
+                    <h3>Thumbnail Label</h3>
+                    <p>description of image</p>
+                    <button class="js-del-image btn btn-warning">delete</button>
+                </div>
+            </div>
+        </div>
+        <!-- / col -->
+          {{/each}}
+    </div>
+    <!-- / row -->
+</template>
+
+```
+
+#####image_share.js 
+
+```JavaScript
+
+
+Images = new Mongo.Collection('images');
+/*console.log(Images.find().count());*/
+
+if (Meteor.isClient) {
+
+  Template.images.helpers({images: Images.find()});
+
+  Template.images.events({
+    'click .js-image': function(event){
+     $(event.target).css("width", "50px");
+    },
+    'click .js-del-image': function(event){
+      var image_id = this._id;
+      /*console.log(image_id);*/
+      $('#' + image_id).hide('slow', function(){
+        Images.remove({_id: image_id});
+      })
+      
+    }
+
+  });
+}
+
+```
+#####startup.js 
+
+```JavaScript
+
+if (Meteor.isServer) {
+    Meteor.startup(function() {
+        if (Images.find().count() == 0){
+
+            for (var i = 1; i < 23; i++){
+                Images.insert(
+                    {
+                          img_src : "img_" + i + ".jpg",
+                          img_alt : "image number" + i
+                    }
+                );// end of Images.insert
+            }// end of for loop
+            console.log("startup.js says..." + Images.find().count());
+        }// end of if have no images
+    });// end of Meteor.startup function
+}// end of if Meteor.isServer
+
+```
+
+#####image_share.css 
+
+```CSS
+
+/* CSS declarations go here */
+
+.thumbnail {
+    min-height: 500px;
+    max-height: 500px;
+}
+
+```
