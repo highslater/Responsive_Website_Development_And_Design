@@ -226,7 +226,9 @@ http://docs.meteor.com/#/full/find
 
 ```Console
 
-highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork/dev/image_share $ meteor add barbatus:stars-rating
+highslater@mint64 ~/Programming/Coursera/Completed/
+Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork/dev/image_share 
+$ meteor add barbatus:stars-rating
                                               
 Changes to your project's package version selections:
                                               
