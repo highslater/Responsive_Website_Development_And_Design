@@ -66,7 +66,9 @@ if (Meteor.isServer) {
 
 ```Console
 
-highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork/dev/image_share $ meteor
+highslater@mint64 ~/Programming/Coursera/Completed/
+Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork/dev/image_share 
+$ meteor
 [[[[[ ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Meteor.js
 Development/CourseWork/dev/image_share ]]]]]
 
