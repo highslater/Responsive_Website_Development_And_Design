@@ -345,3 +345,40 @@ if (Meteor.isClient) {
 
 #####Implement image adding with a Bootstrap modal (part 1)
 
+
+~~~~~~HTML
+
+<head>
+  <title>image_share</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+    <div class="container">
+          {{> images}}
+    </div>
+    <!-- / container -->
+</body>
+        
+<template name="images">
+    <div class="row">
+        {{#each images}}
+        <div class="col-xs-12 col-md-3" id="{{_id}}">
+            <div class="thumbnail">
+                <img src="{{img_src}}" alt="{{img_alt}}" class="js-image"/>
+                <div class="caption">
+                    <h3>Rating: {{rating}}</h3>
+                    <p>description of image</p>
+                    <p>{{> starsRating mutable=true class="js-rate-image" id=_id }}</p>
+                    <button class="js-del-image btn btn-warning">delete</button>
+                </div>
+            </div>
+        </div>
+        <!-- / col -->
+          {{/each}}
+      </div>
+    <!-- / row -->
+</template>
+
+~~~~~~
+
