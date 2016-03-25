@@ -337,11 +337,9 @@ if (Meteor.isClient) {
 
       Images.update({_id: image_id}, 
                              {$set: {rating: rating}});
-
     }, // end of click .js-rate-image
-
+    
   }); // end of Template.images.events
-
 } // end of if (Meteor.isClient)
 
 ```
