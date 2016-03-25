@@ -457,3 +457,6 @@ if (Meteor.isClient) {
 } // end of if (Meteor.isClient)
 
 ```
+
+
+##### Implement image adding with a Bootstrap modal (part 2)  
