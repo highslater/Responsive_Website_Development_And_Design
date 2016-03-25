@@ -237,4 +237,28 @@ less                   added, version 2.5.1
                                          
 barbatus:stars-rating: Stars rating control  
 
+highslater@mint64 ~/Programming/Coursera/Completed/
+Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork/dev/image_share 
+$ meteor list
+
+autopublish            1.0.4  (For prototyping only) Publish the entire datab...
+barbatus:stars-rating  1.0.7  Stars rating control
+blaze-html-templates   1.0.1  Compile HTML templates into reactive UI with Me...
+ecmascript             0.1.6* Compiler plugin that supports ES2015+ in all .j...
+es5-shim               4.1.14  Shims and polyfills to improve ECMAScript 5 su...
+insecure               1.0.4  (For prototyping only) Allow all database write...
+jquery                 1.11.4  Manipulate the DOM using CSS selectors
+meteor-base            1.0.1  Packages that every Meteor app needs
+mobile-experience      1.0.1  Packages for a great mobile user experience
+mongo                  1.1.3  Adaptor for using MongoDB and Minimongo over DDP
+session                1.1.1  Session variable
+standard-minifiers     1.0.2  Standard minifiers used with Meteor apps by def...
+tracker                1.0.9  Dependency tracker to allow reactive callbacks
+twbs:bootstrap         3.3.6  The most popular front-end framework for develo...
+                                           
+* New versions of these packages are available! Run 'meteor update' to try to
+  update those packages to their latest versions. If your packages cannot be
+  updated further, try typing `meteor add <package>@<newVersion>` to see more
+  information.
+
 ```
