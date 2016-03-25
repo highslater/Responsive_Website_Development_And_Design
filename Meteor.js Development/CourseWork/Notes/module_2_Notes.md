@@ -262,3 +262,86 @@ twbs:bootstrap         3.3.6  The most popular front-end framework for develo...
   information.
 
 ```
+
+
+######image_share.html  
+
+```HTML
+
+<head>
+  <title>image_share</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+    <div class="container">
+          {{> images}}
+    </div>
+    <!-- / container -->
+</body>
+        
+    <template name="images">
+    <div class="row">
+        {{#each images}}
+        <div class="col-xs-12 col-md-3" id="{{_id}}">
+            <div class="thumbnail">
+                <img src="{{img_src}}" alt="{{img_alt}}" class="js-image"/>
+                <div class="caption">
+                    <h3>Rating: {{rating}}</h3>
+                    <p>description of image</p>
+                    <p>{{> starsRating mutable=true class="js-rate-image" id=_id }}</p>
+                    <button class="js-del-image btn btn-warning">delete</button>
+                </div>
+            </div>
+        </div>
+        <!-- / col -->
+          {{/each}}
+    </div>
+    <!-- / row -->
+</template>
+
+```
+
+
+######image_share.js  
+
+```JavaScript
+
+
+Images = new Mongo.Collection('images');
+
+if (Meteor.isClient) {
+
+  Template.images.helpers({images:
+    Images.find({}, {sort: {rating: -1}})
+  });
+
+  Template.images.events({
+
+    'click .js-image': function(event){
+     $(event.target).css("width", "50px");
+    }, // end of click .js-image
+
+    'click .js-del-image': function(event){
+      var image_id = this._id;
+      $('#' + image_id).hide('slow', function(){
+        Images.remove({_id: image_id});
+      }) // end of function
+    }, // end of click .js-del-image
+
+    'click .js-rate-image': function(event){
+      var rating = $(event.currentTarget).data("userrating");
+      console.log(rating);
+      var image_id = this.id;
+      console.log(image_id);
+
+      Images.update({_id: image_id}, 
+                             {$set: {rating: rating}});
+
+    }, // end of click .js-rate-image
+
+  }); // end of Template.images.events
+
+} // end of if (Meteor.isClient)
+
+```
