@@ -1,8 +1,8 @@
-###Module 2
+##Module 2
 
 Welcome to the second module of 'Introduction to Meteor.js Development'! In this course we will be creating Mongo Collections and using Mongo find and insert operations. In addition, we will be looking at how to control a Bootstrap modal from Meteor and we will be using third party Meteor packages to add functionality. Enjoy!
 
-####Learning outcomes:
+###Learning outcomes:
 
 By the end of the module you will be able to:
 
@@ -11,13 +11,13 @@ Use Mongo find and insert operations
 Control a Bootstrap modal from Meteor
 Use third party Meteor packages to add functionality
 
-#####URL for this module: 
+####URL for this module: 
 Meteor collections: http://docs.meteor.com/#/full/mongo_collection
 
 Here is a zip file containing the application from the videos:
 image_share_mod_2.zip
 
-#####URL for this lesson
+####URL for this lesson
 Collection.find: http://docs.meteor.com/#/full/find
 
 ####Create a collection of images
@@ -212,5 +212,5 @@ if (Meteor.isServer) {
 
 ```
 
-#####URL for this lesson
+####URL for this lesson
 Collection.find: http://docs.meteor.com/#/full/find
