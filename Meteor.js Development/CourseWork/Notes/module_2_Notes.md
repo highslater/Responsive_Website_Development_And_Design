@@ -11,13 +11,13 @@ Use Mongo find and insert operations
 Control a Bootstrap modal from Meteor
 Use third party Meteor packages to add functionality
 
-URL for this module
+#####URL for this module: 
 Meteor collections: http://docs.meteor.com/#/full/mongo_collection
 
 Here is a zip file containing the application from the videos:
 image_share_mod_2.zip
 
-URL for this lesson
+#####URL for this lesson
 Collection.find: http://docs.meteor.com/#/full/find
 
 ####Create a collection of images
@@ -212,5 +212,5 @@ if (Meteor.isServer) {
 
 ```
 
-URL for this lesson
+#####URL for this lesson
 Collection.find: http://docs.meteor.com/#/full/find
