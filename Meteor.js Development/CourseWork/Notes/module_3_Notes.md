@@ -13,3 +13,10 @@ By the end of this module, you will be able to:
   * Implement an infinite scroll    
 
 
+Here are two zip files. The first one contains the code for the application. The second one contains the images. Place the image files inside the public folder in the application. We have separated them so you can download only the code if you already have the images.
+
+  * images.zip
+  * image_share_wk3.zip
+
+
+
