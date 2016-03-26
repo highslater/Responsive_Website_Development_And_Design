@@ -19,4 +19,34 @@ Here are two zip files. The first one contains the code for the application. The
   * image_share_wk3.zip
 
 
+####User authentication with Meteor.js
+
+
+
+```Console
+
+highslater@mint64 ~/Programming/Coursera/Completed/
+Responsive_Website_Development_And_Design/Meteor.js Development/CourseWork/dev/image_share 
+$ meteor add accounts-ui accounts-password
+                                              
+Changes to your project's package version selections:
+                                              
+accounts-base          added, version 1.2.2   
+accounts-password      added, version 1.1.4
+accounts-ui            added, version 1.1.6
+accounts-ui-unstyled   added, version 1.1.8
+ddp-rate-limiter       added, version 1.0.0
+email                  added, version 1.0.8
+localstorage           added, version 1.0.5
+npm-bcrypt             added, version 0.7.8_2
+rate-limit             added, version 1.0.0
+service-configuration  added, version 1.0.5
+sha                    added, version 1.0.4
+srp                    added, version 1.0.4
+
+                                              
+accounts-ui: Simple templates to add login widgets to an app
+accounts-password: Password support for accounts
+
+```
 
