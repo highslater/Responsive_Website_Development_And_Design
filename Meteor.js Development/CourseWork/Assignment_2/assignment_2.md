@@ -19,6 +19,7 @@ You can gain up to 70% by implementing the following features:
   * **On the detail page**, users can post comments about a webpage, and they are displayed below the description of the webpage. 
 
 
+You can gain a further 30% by implementing one or more of the following features:
 
 #####Challenge 1: Automatic information
 
