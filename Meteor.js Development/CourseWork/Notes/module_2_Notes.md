@@ -498,7 +498,8 @@ if (Meteor.isClient) {
       </div><!-- end of modal-body -->
 
         <div class="modal-footer">
-        <button class="btn btn-warning" data-dismiss="modal">cancel</button><!-- this works because of the data-dismiss attribute -->
+        <button class="btn btn-warning" data-dismiss="modal">cancel</button>  
+        <!-- this works because of the data-dismiss attribute -->
         </div><!-- end of modal-footer -->
     </div><!-- end of modal-content -->
   </div><!-- end of modal-dialog -->
