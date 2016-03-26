@@ -7,10 +7,9 @@ Welcome to the third module of 'Introduction to Meteor.js Development!'. In this
 
 By the end of this module, you will be able to:
 
-  *Add user authentication to your Meteor app
-  *Use Mongo filters
-  *Use the Meteor reactive session variable
-  *Implement an infinite scroll    
+  * Add user authentication to your Meteor app
+  * Use Mongo filters
+  * Use the Meteor reactive session variable
+  * Implement an infinite scroll    
 
 
-  
