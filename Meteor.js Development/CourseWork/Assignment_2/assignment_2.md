@@ -6,7 +6,9 @@ Make a social website aggregator using Meteor. A social website aggregator allow
 #####Review criteria 
 Everyone in the course must assess the work of 3 of their peers in order to gain a grade for this assessment. Some people choose to mark even more work, as this exposes them to more ideas and coding techniques.  
 #####Instructions: 
-You are to make a website aggregator application. The purpose of the application is to allow users to share, discuss and rate pages they find on the internet. You are provided with some starter code which displays a simple list of websites. You can gain up to 70% by implementing the following features:
+You are to make a website aggregator application. The purpose of the application is to allow users to share, discuss and rate pages they find on the internet. You are provided with some starter code which displays a simple list of websites.  
+  
+  You can gain up to 70% by implementing the following features:
 
   * **Users** can register and login.
   * **Users** can post new websites if they are logged in. Websites posted by users should have an URL and a description.
