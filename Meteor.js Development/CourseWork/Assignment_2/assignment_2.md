@@ -2,7 +2,7 @@
 
 #####Instructions
 
-Make a social website aggregator using Meteor. A social website aggregator allows users to share, discuss and rank interesting webpages they have found. Please download this ZIP file before you begin your assignment. 
+Make a social website aggregator using *Meteor*. A social website aggregator allows users to share, discuss and rank interesting webpages they have found. Please download this ZIP file before you begin your assignment. 
 #####Review criteria 
 Everyone in the course must assess the work of 3 of their peers in order to gain a grade for this assessment. Some people choose to mark even more work, as this exposes them to more ideas and coding techniques.  
 #####Instructions: 
@@ -23,7 +23,7 @@ You can gain a further 30% by implementing one or more of the following features
 
 #####Challenge 1: Automatic information
 
-Can you use the HTTP package for Meteor to pull in information about the posted web links automatically, so the user does not need to enter anything other than the URL? 
+Can you use the HTTP package for *Meteor* to pull in information about the posted web links automatically, so the user does not need to enter anything other than the URL? 
 
 #####Challenge 2: Search function
 
@@ -33,4 +33,4 @@ Implement a search function that allows the user to search within the listed sit
 
 Can you recommend websites to users based on things they have up voted and commented on? E.g. if I up vote a site entitled ‘Tofu recipes’, it would recommend other sites with ‘tofu’ and ‘recipe’ in their titles or descriptions. 
 
-You should deploy your application using the Meteor deploy command and submit a link to the site running on the Meteor server. 
+You should deploy your application using the *Meteor *deploy command and submit a link to the site running on the *Meteor *server. 
