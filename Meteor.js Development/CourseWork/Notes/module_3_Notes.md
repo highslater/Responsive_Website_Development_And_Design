@@ -120,3 +120,5 @@ accounts-password: Password support for accounts
 </template>
 
 ```
+
+####Tidying up the design with a navbar
