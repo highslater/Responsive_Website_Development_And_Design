@@ -16,7 +16,7 @@ You can gain up to 70% by implementing the following features:
   * **Websites** should be listed with the most up voted site first. 
   * **The listing page** shows when the website was added and how many up and down votes it has.
   * **Users** can move to a detail page for a website (using routing). 
-  * **On the detail page**, users can post comments about a webpage, and they are displayed below the description of the webpage. 
+  * **On the detail page**, users can post comments about a webpage, and they are displayed below the description of the webpage.   
 
   You can gain a further 30% by implementing one or more of the following features:
 
