@@ -50,3 +50,72 @@ accounts-password: Password support for accounts
 
 ```
 
+
+###### image_share.html
+
+```HTML
+
+<head>
+  <title>image_share</title>
+</head>
+
+<body>
+{{> image_add_form}}
+    <div class="container">
+    <h1>Welcome to image share!</h1>
+    <p>{{> loginButtons}}</p>
+    <br>
+    {{> images}}
+    </div><!-- / container -->
+</body>
+
+<template name="image_add_form">
+
+<div class="modal fade" id="image_add_form">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">
+        </div><!-- end of modal-title -->
+      </div><!-- end of modal-header -->
+
+      <div class="modal-body">
+        <form class="js-add-image">
+              <input type="text" name="img_src" placeholder=" image URL">
+              <br>
+              <input type="text" name="img_alt" placeholder=" image alt text">
+              <button class="btn btn-success">save</button> 
+        </form> 
+      </div><!-- end of modal-body -->
+
+        <div class="modal-footer">
+        <button class="btn btn-warning" data-dismiss="modal">cancel</button><!-- this works because of the data-dismiss attribute -->
+        </div><!-- end of modal-footer -->
+    </div><!-- end of modal-content -->
+  </div><!-- end of modal-dialog -->
+</div><!-- end of modal fade -->
+</template>
+        
+<template name="images">
+<button class="btn btn-success js-show-image-form">add image</button>
+<hr>
+    <div class="row">
+        {{#each images}}
+        <div class="col-xs-12 col-md-3" id="{{_id}}">
+            <div class="thumbnail">
+                <img src="{{img_src}}" alt="{{img_alt}}" class="js-image"/>
+                <div class="caption">
+                    <h3>Rating: {{rating}}</h3>
+                    <p>{{img_alt}}</p>
+                    <p>{{> starsRating mutable=true class="js-rate-image" id=_id }}</p>
+                    <button class="js-del-image btn btn-warning">delete</button>
+                </div>
+            </div>
+        </div>
+        <!-- / col -->
+          {{/each}}
+    </div>
+    <!-- / row -->
+</template>
+
+```
