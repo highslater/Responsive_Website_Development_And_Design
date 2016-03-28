@@ -14,7 +14,7 @@
 </nav><!-- / navbar -->
 
     <div class="container">
-    <h1>Welcome to image share!</h1>
+    <h1>Welcome to image share {{username}}!</h1>
     {{> images}}
     </div><!-- / container -->
 </body>
@@ -49,7 +49,9 @@
 </template>
         
 <template name="images">
+{{#if currentUser}}
 <button class="btn btn-success js-show-image-form">add image</button>
+{{/ if}}
 <hr>
     <div class="row">
         {{#each images}}

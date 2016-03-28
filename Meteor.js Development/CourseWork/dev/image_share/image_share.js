@@ -7,6 +7,17 @@ if (Meteor.isClient) {
     Images.find({}, {sort: {createdOn: -1, rating: -1}})
   });
 
+  Template.body.helpers({username: function(){
+    if (Meteor.user()) {
+      return Meteor.user().emails[0].address;
+    } 
+    else {
+      return "anonymous internet user";
+    }
+  }  // end of function
+  }); // end of Template.body.helpers
+
+
   Template.images.events({
 
     'click .js-image': function(event){
