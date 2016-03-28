@@ -309,7 +309,8 @@ Meteor.user() function: http://docs.meteor.com/#/full/meteor_user
 
 ######image_share.js  
 
-```CSS
+```JavaScript
+
 
 Images = new Mongo.Collection('images');
 
@@ -367,7 +368,6 @@ if (Meteor.isClient) {
       var img_src, img_alt;
       img_src = event.target.img_src.value;
       img_alt = event.target.img_alt.value;
-      // console.log("src: " + img_src + " alt: " + img_alt);
 
       Images.insert({
         img_src: img_src,
