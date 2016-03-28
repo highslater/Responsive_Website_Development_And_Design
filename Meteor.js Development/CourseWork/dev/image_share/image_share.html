@@ -5,11 +5,16 @@
 </head>
 
 <body>
-{{> image_add_form}}
+  {{> image_add_form}}
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    {{> loginButtons}}
+  </div><!-- / container -->
+</nav><!-- / navbar -->
+
     <div class="container">
     <h1>Welcome to image share!</h1>
-    <p>{{> loginButtons}}</p>
-    <br>
     {{> images}}
     </div><!-- / container -->
 </body>
@@ -40,12 +45,7 @@
     </div><!-- end of modal-content -->
   </div><!-- end of modal-dialog -->
 </div><!-- end of modal fade -->
-
-
-
-
-  
-  
+ 
 </template>
         
 <template name="images">
@@ -55,7 +55,7 @@
         {{#each images}}
         <div class="col-xs-12 col-md-3" id="{{_id}}">
             <div class="thumbnail">
-                <img src="{{img_src}}" alt="{{img_alt}}" class="js-image"/>
+                <img src="{{img_src}}" alt="{{img_alt}}" class="js-image thumbnail-img"/>
                 <div class="caption">
                     <h3>Rating: {{rating}}</h3>
                     <p>{{img_alt}}</p>
