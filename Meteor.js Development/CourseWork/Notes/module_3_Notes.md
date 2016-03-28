@@ -388,3 +388,6 @@ if (Meteor.isClient) {
 
 ####URL for this lesson:  
 Accounts.ui.config: http://docs.meteor.com/#/full/accounts_ui_config
+
+####Customising the user registration form  
+
