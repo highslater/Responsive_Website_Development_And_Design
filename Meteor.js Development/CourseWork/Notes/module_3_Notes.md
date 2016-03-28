@@ -225,3 +225,4 @@ body {
 #####URL for this lesson:  
 Meteor.user() function: http://docs.meteor.com/#/full/meteor_user
 
+####Accessing user information
