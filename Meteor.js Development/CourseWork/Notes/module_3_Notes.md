@@ -124,8 +124,7 @@ accounts-password: Password support for accounts
 ####Tidying up the design with a navbar:
 
 ######image_share.html  
-```
-HTML  
+```HTML  
   
 
 <head>
@@ -202,9 +201,8 @@ HTML
 
 
 ######image_share.css 
- 
-```
-CSS  
+
+```CSS  
 
 /* CSS declarations go here */
 
