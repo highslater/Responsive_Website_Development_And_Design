@@ -655,3 +655,14 @@ if (Meteor.isClient) {
 
 
 ```
+
+
+####URLs for this lesson
+
+More details on MongoDB filters:  
+http://docs.mongodb.org/manual/reference/method/db.collection.find/  
+
+Meteor Sessions:  
+http://docs.meteor.com/#/full/session
+
+####Filtering images by user  
