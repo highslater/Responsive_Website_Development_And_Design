@@ -6,8 +6,17 @@ if (Meteor.isClient) {
     passwordSignupFields: "USERNAME_AND_EMAIL"
   });
 
-  Template.images.helpers({images:
-    Images.find({}, {sort: {createdOn: -1, rating: -1}}),
+  Template.images.helpers({
+
+    images: function(){
+      if (Session.get("userFilter")){
+        return Images.find({createdBy: Session.get("userFilter")}, {sort: {createdOn: -1, rating: -1}});
+      }
+      else {
+        return Images.find({}, {sort: {createdOn: -1, rating: -1}});
+      }
+    },
+
 
     getUser: function(user_id) {
       var user = Meteor.users.findOne({_id: user_id});
@@ -59,6 +68,10 @@ if (Meteor.isClient) {
     'click .js-show-image-form': function(event){
       $('#image_add_form').modal('show');
     }, // end of click .js-show-image-form
+
+    'click .js-set-image-filter' : function(event) {
+      Session.set("userFilter", this.createdBy)
+    }, // end of click .js-set-image-filter
 
 
   }); // end of Template.images.events
