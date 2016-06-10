@@ -1,5 +1,5 @@
 #Web Application Development with JavaScript and MongoDB
-##MongoDB, Meteor and reactive data
+##Week 1: MongoDB, Meteor and reactive data
 ###Learning outcomes  
 ####By the end of this module, you will be able to:
 
