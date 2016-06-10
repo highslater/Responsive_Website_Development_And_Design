@@ -26,3 +26,57 @@ If you are new to Meteor, try some of the learning resources here:
   https://www.meteor.com/learn     
 
 ```
+
+######textcircle/main.html  
+
+```HTML  
+
+<head>
+    <title>TextCircle</title>
+</head>
+
+<body>
+    <h1>Welcome to TextCircle!</h1> {{> editor}}
+</body>
+<template name="editor">
+    {{>sharejsCM docid=docid id="editor"}}
+</template>
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
