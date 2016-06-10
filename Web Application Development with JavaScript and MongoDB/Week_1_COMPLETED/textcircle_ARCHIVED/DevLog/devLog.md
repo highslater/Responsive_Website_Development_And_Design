@@ -10,7 +10,8 @@
 
 
 ```Bash  
-highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Web Application Development with JavaScript and MongoDB/Week_1_COMPLETED/textcircle_ARCHIVED $ meteor create textcircle
+highslater@mint64 ~/Week_1_COMPLETED/textcircle_ARCHIVED  
+$ meteor create textcircle
 Created a new Meteor app in 'textcircle'.     
 
 To run your new app:                          
@@ -19,6 +20,5 @@ To run your new app:
                                               
 If you are new to Meteor, try some of the learning resources here:
   https://www.meteor.com/learn     
-
 
 ```
