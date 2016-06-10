@@ -1,5 +1,7 @@
-##Learning outcomes  
-###By the end of this module, you will be able to:
+#Web Application Development with JavaScript and MongoDB
+##MongoDB, Meteor and reactive data
+###Learning outcomes  
+####By the end of this module, you will be able to:
 
 #####Access MongoDB on the command line
 #####Understand how to check for valid returns from find queries
@@ -8,9 +10,10 @@
 #####Understand variable scope
 #####Use iframes to embed separate web pages
 
-
+###TextCircle
 
 ######Console Output
+
 ```Console
 highslater@mint64 ~/Week_1_COMPLETED/textcircle_ARCHIVED
 $ meteor create textcircle
