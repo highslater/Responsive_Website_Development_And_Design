@@ -9,7 +9,7 @@
 ######Use iframes to embed separate web pages
 
 
-```Console  
+```Bash  
 highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Web Application Development with JavaScript and MongoDB/Week_1_COMPLETED/textcircle_ARCHIVED $ meteor create textcircle
 Created a new Meteor app in 'textcircle'.     
 
