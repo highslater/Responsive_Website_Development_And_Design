@@ -15,7 +15,7 @@
 ######Console Output
 
 ```Console
-highslater@mint64 ~/Week_1_COMPLETED/textcircle_ARCHIVED
+@mint64 ~/Week_1_COMPLETED/textcircle_ARCHIVED
 $ meteor create textcircle
 
 Created a new Meteor app in 'textcircle'.     
