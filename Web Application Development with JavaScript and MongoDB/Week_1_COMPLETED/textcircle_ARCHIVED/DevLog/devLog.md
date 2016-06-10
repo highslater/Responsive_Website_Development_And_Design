@@ -12,12 +12,11 @@
 ```Console
 highslater@mint64 ~/Week_1_COMPLETED/textcircle_ARCHIVED
 $ meteor create textcircle
-Created a new Meteor app in 'textcircle'.     
 
+Created a new Meteor app in 'textcircle'.     
 To run your new app:                          
   cd textcircle                               
-  meteor                                      
-                                              
+  meteor                                                                                 
 If you are new to Meteor, try some of the learning resources here:
   https://www.meteor.com/learn     
 
