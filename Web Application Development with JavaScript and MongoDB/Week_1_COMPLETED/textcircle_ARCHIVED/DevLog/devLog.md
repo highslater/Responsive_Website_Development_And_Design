@@ -12,7 +12,7 @@
 
 ###Lecture 1: TextCircle
 
-![image_01.png](Images/image_01.png "Logo Title Text 1")
+![image_01.png](Media/Images/image_01.png "Logo Title Text 1")
 
 
 ######Console Output
