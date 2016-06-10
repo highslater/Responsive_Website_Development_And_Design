@@ -12,7 +12,7 @@
 
 ###Lecture 1: TextCircle
 
-![image_01.png](Media/Images/image_01.png "Logo Title Text 1")
+![Starting folder structure](Media/Images/image_01.png "Starting folder structure)
 
 
 ######Console Output
