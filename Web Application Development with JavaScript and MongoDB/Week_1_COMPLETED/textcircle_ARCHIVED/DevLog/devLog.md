@@ -12,7 +12,9 @@
 
 ###Lecture 1: TextCircle
 
-![Starting folder structure](Media/Images/image_01.png "Starting folder structure)
+######Starting Folder Structure:
+
+![Starting folder structure](Media/Images/image_01.png "Starting folder structure")
 
 
 ######Console Output
