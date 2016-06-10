@@ -12,6 +12,9 @@
 
 ###Lecture 1: TextCircle
 
+![alt text](image_01.png "Logo Title Text 1")
+
+
 ######Console Output
 
 ```Console
