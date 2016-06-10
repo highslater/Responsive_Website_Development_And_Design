@@ -8,6 +8,8 @@
 #####Understand variable scope
 #####Use iframes to embed separate web pages
 
+
+
 ######Console Output
 ```Console
 highslater@mint64 ~/Week_1_COMPLETED/textcircle_ARCHIVED
