@@ -7,3 +7,18 @@
 ######Use the Session object to store user data
 ######Understand variable scope
 ######Use iframes to embed separate web pages
+
+
+```Console  
+highslater@mint64 ~/Programming/Coursera/Completed/Responsive_Website_Development_And_Design/Web Application Development with JavaScript and MongoDB/Week_1_COMPLETED/textcircle_ARCHIVED $ meteor create textcircle
+Created a new Meteor app in 'textcircle'.     
+
+To run your new app:                          
+  cd textcircle                               
+  meteor                                      
+                                              
+If you are new to Meteor, try some of the learning resources here:
+  https://www.meteor.com/learn     
+
+
+```
