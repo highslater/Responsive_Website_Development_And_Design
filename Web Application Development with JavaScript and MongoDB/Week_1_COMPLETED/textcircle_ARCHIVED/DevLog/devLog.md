@@ -10,7 +10,7 @@
 #####Understand variable scope
 #####Use iframes to embed separate web pages
 
-###TextCircle
+###Lecture 1: TextCircle
 
 ######Console Output
 
