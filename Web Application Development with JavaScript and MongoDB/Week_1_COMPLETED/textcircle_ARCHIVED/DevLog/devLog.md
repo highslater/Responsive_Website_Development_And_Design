@@ -74,9 +74,13 @@ if (Meteor.isServer) {
 
 ```
 
+######textcircle/main.css
 
+```CSS 
 
+/* CSS declarations go here */
 
+```
 
 
 
