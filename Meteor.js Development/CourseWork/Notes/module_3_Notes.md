@@ -857,3 +857,5 @@ if (Meteor.isClient) {
 } // end of if (Meteor.isClient)
 
 ```
+
+####Removing the image filter  
